@@ -1,0 +1,161 @@
+<link rel="stylesheet" type="text/css" href="website/css/table-restrict.css" />
+<link rel="stylesheet" type="text/css" href="website/css/page-bar.css" />
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" style="font-size: 21px">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="product_base-tab" data-toggle="tab" href="#Basic" role="tab" aria-controls="product_base" aria-selected="true">Basic</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="raw_material_base-tab" data-toggle="tab" href="#raw_material_base" role="tab" aria-controls="raw_material_base" aria-selected="true">Raw Material</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="semi_product_base-tab" data-toggle="tab" href="#semi_product_base" role="tab" aria-controls="semi_product_base" aria-selected="true">Semi-Finished</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="consumable_base-tab" data-toggle="tab" href="#consumable_base" role="tab" aria-controls="consumable_base" aria-selected="true">Consumable</a>
+    </li>
+</ul>
+<!-- Tab panes -->
+<div style="height:100%;font-size:21px;user-select:text;" class="tab-content">
+    <div style="height:100%;" class="tab-pane active" id="Basic" role="tabpanel" aria-labelledby="product_base-tab">
+    </div>
+
+
+    <div style="height:100%;" class="tab-pane" id="raw_material_base" role="tabpanel" aria-labelledby="raw_material-tab">
+
+        <div class="row mt-2">
+            <input id="inp_box_raw" class="form-control col-6" value="" />
+            <button type="button" class="col-3 btn btn-primary" onclick="on_search_click('RawBase');">search</button>
+            <button class="col-3 btn btn-info" onclick="refresh('RawBase', raw_current_page)">refresh</button>
+        </div>
+        <div class="row mt-2">
+            <div class="offset-3 col-6" id="info_div_container_raw">
+                <div class="alert alert-info  alert-dismissable">
+                    <a onclick="refresh('RawBase', raw_current_page)">click「refresh」</a>
+                    <button class="close" data-dismiss="alert">&times</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <table class="table table-hover">
+                <thead class="thead-dark" id="raw_base_thead">
+                    <tr>
+                        <th scope="col">Oid</th>
+                        <th scope="col">name</th>
+                        <th scope="col">unit</th>
+                        <th scope="col">quantity</th>
+                        <th scope="col">operation</th>
+                    </tr>
+                </thead>
+                <tbody id="raw_base_tbody">
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="row">
+                    <div id="pagination2">
+                        <span id="raw-page-bar-span">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <a class="btn btn-primary" href="/add?category=1" target="_blank">add new</a>
+        </div>
+
+
+    </div>
+
+    <div style="height:100%;" class="tab-pane" id="semi_product_base" role="tabpanel" aria-labelledby="semi_product-tab">
+
+        <div class="row mt-2">
+            <input id="inp_box_semi" class="form-control col-6" value="" />
+            <button type="button" class="col-3 btn btn-primary" onclick="on_search_click('SemiBase');">search</button>
+            <button class="col-3 btn btn-info" onclick="refresh('SemiBase', semi_current_page)">refresh</button>
+        </div>
+        <div class="row mt-2">
+            <div class="offset-3 col-6" id="info_div_container_semi">
+                <div class="alert alert-info  alert-dismissable">
+                    <a onclick="refresh('SemiBase', semi_current_page)">click「refresh」</a>
+                    <button class="close" data-dismiss="alert">&times</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <table class="table table-hover">
+                <thead class="thead-dark" id="semi_base_thead">
+                    <tr>
+                        <th scope="col">Oid</th>
+                        <th scope="col">name</th>
+                        <th scope="col">unit</th>
+                        <th scope="col">quantity</th>
+                        <th scope="col">operation</th>
+                    </tr>
+                </thead>
+                <tbody id="semi_base_tbody">
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="row">
+                    <div id="pagination2">
+                        <span id="semi-page-bar-span">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <a class="btn btn-primary" href="/add?category=3" target="_blank">add new</a>
+        </div>
+
+
+    </div>
+
+    <div style="height:100%;" class="tab-pane" id="consumable_base" role="tabpanel" aria-labelledby="consumable-tab">
+
+        <div class="row mt-2">
+            <input id="inp_box_consumable" class="form-control col-6" value="" />
+            <button type="button" class="col-3 btn btn-primary" onclick="on_search_click('ConsumableBase');">search</button>
+            <button class="col-3 btn btn-info" onclick="refresh('ConsumableBase', consumable_current_page)">refresh</button>
+        </div>
+        <div class="row mt-2">
+            <div class="offset-3 col-6" id="info_div_container_consumable">
+                <div class="alert alert-info  alert-dismissable">
+                    <a onclick="refresh('ConsumableBase', consumable_current_page)">click「refresh」</a>
+                    <button class="close" data-dismiss="alert">&times</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <table class="table table-hover">
+                <thead class="thead-dark" id="consumable_base_thead">
+                    <tr>
+                        <th scope="col">Oid</th>
+                        <th scope="col">name</th>
+                        <th scope="col">unit</th>
+                        <th scope="col">quantity</th>
+                        <th scope="col">operation</th>
+                    </tr>
+                </thead>
+                <tbody id="consumable_base_tbody">
+                </tbody>
+            </table>
+            <div class="container">
+                <div class="row">
+                    <div id="pagination2">
+                        <span id="consumable-page-bar-span">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <a class="btn btn-primary" href="/add?category=5" target="_blank">add new</a>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="website/lib/bootstrap/dist/js/bootstrap.js"></script>
