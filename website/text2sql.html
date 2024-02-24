@@ -26,6 +26,8 @@
         tokens: 100,
         max_tokens: 4096,
         min_tokens: 0,
+        query_text: "",
+        output_textarea: "",
         inputBlurListener(e){
             if(this.tokens > this.max_tokens){
                 this.tokens = this.max_tokens;
@@ -44,6 +46,30 @@
         },
         input_event(e){
             this.tokens = e.target.value
+        },
+        query_submit(){
+            let data = JSON.stringify({
+                "query": this.query_text
+            })
+            $.ajax({
+                url: "/post_query",
+                type: "post",
+                dataType: "json",
+                contentType: "application/json",
+                data: data,
+                complete: (xhr, status) => {
+                    console.log(xhr)
+                    console.log(status)
+                },
+                success: (result, status, xhr) => {
+                    console.log(result)
+                    let msg = result["msg"]
+                    this.output_textarea = "[INPUT]\n"
+                    this.output_textarea += msg["query"] + "\n\n[OUTPUT]\n"
+                    this.output_textarea += msg["response"]
+                }
+            }
+        )
         }
 
     }).mount()
@@ -56,13 +82,13 @@
             <div class="form-group">
                 <label for="input">Input</label>
                 <textarea class="form-control" id="input" style="height:350px"
-                    placeholder="Input your query"></textarea>
+                    placeholder="Input your query" v-model="query_text"></textarea>
             </div>
         </div>
 
         <div class="row col-sm-3 justify-content-center">
             <div class="col-sm-12">
-                <label for="config">config</label>
+                <label for="config">Config</label>
                 <div class="card" style="height:350px">
                     <div class="card-body">
                         <div class="form-group">
@@ -79,13 +105,13 @@
         <div class="col-sm-12">
             <div class="form-group">
                 <label for="other">Output</label>
-                <textarea class="form-control" id="result" rows="5" placeholder="Output"></textarea>
+                <textarea class="form-control" id="result" rows="5" placeholder="Output" v-model="output_textarea" readonly style="background-color: azure;"></textarea>
             </div>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
-        <button type="submit" class="btn btn-primary" id="submit-btn">submit</button>
+        <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
     </div>
 
 </div>

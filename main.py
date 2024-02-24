@@ -1,9 +1,10 @@
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 import jinja2
 import datetime
 from fastapi.staticfiles import StaticFiles
+from web_model import *
 
 app = FastAPI()
 templateLoader = jinja2.FileSystemLoader(searchpath="./")
@@ -21,12 +22,18 @@ HTMLRESPONSE_index = template_layout.render({
     })
 })
 
-async def set_index():
-    pass
 
 @app.get("/", response_class=HTMLResponse)
 async def index():
     return HTMLRESPONSE_index
+
+@app.post("/post_query", response_class=JSONResponse)
+async def post_query(query: QueryRequest = Body()):
+    return {"server": "ok",
+            "msg": {
+                "query": query.query,
+                "response": "this is a test response"
+            }}
 
 app.mount("/website", StaticFiles(directory="website"), name="web")
 if __name__ == "__main__":
