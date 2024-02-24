@@ -19,11 +19,33 @@
 
     }
 </style>
-<script src="https://unpkg.com/petite-vue" defer init></script>
+<script src="https://unpkg.com/petite-vue"></script>
 <script type="module">
     import { createApp } from 'https://unpkg.com/petite-vue?module'
     createApp({
-        tokens: 100
+        tokens: 100,
+        max_tokens: 4096,
+        min_tokens: 0,
+        inputBlurListener(e){
+            if(this.tokens > this.max_tokens){
+                this.tokens = this.max_tokens;
+            }
+            else if(this.tokens < this.min_tokens){
+                this.tokens = this.min_tokens;
+            }
+            else if(Number.isNaN(this.tokens) || "-" in this.tokens || "+" in this.tokens){
+                alert("not a number");
+                this.tokens = 0;
+            }
+            else{
+                alert("a number!")
+                alert(this.tokens)
+            }
+        },
+        input_event(e){
+            this.tokens = e.target.value
+        }
+
     }).mount()
     
 </script>
@@ -44,9 +66,9 @@
                 <div class="card" style="height:350px">
                     <div class="card-body">
                         <div class="form-group">
-                            <label  for="range-input">Max Tokens: </label>
-                            <input type="number" class="form-control" id="range-value" min="0" max="4000" step="1" v-model="tokens"/>
-                            <input type="range" class="form-control-range" id="range-input" min="0" max="4000" step="1" v-model="tokens"/>
+                            <label for="range-input">Max Tokens: </label>
+                            <input type="number" class="form-control" id="range-input" :min="min_tokens" :max="max_tokens" step="1" :value="tokens" @input="input_event" @blur="inputBlurListener"/>
+                            <input type="range" class="form-control-range" id="range-value" :min="min_tokens" :max="max_tokens" step="1" v-model="tokens" />
                         </div>
                     </div>
                 </div>
