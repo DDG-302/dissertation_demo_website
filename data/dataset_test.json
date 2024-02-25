@@ -1,0 +1,2743 @@
+{
+    "data": [
+        {
+            "question": [
+                "What was the first publicly-funded post-secondary technical institution in Hong Kong?",
+                "When was the Government Trade School founded?",
+                "What was the initial name of the Government Trade School?"
+            ],
+            "answer": "The first publicly-funded post-secondary technical institution in Hong Kong was the Government Trade School, founded in 1937. It was initially named the Government Trade School."
+        },
+        {
+            "question": [
+                "When did the Hong Kong Technical College get its name?",
+                "What was the Hong Kong Technical College renamed to?",
+                "In which year did the Hong Kong Technical College change its name?"
+            ],
+            "answer": "The Hong Kong Technical College was renamed in 1947 to the Hong Kong Technical College."
+        },
+        {
+            "question": [
+                "When was the Hong Kong Polytechnic formally established?",
+                "What institution did the Hong Kong Polytechnic take over in 1972?"
+            ],
+            "answer": "The Hong Kong Polytechnic was formally established in August 1972, taking over the campus and staff of the Hong Kong Technical College."
+        },
+        {
+            "question": [
+                "When did the Institution attain full University status?",
+                "In which year did the Institution become a full-fledged University?"
+            ],
+            "answer": "The Institution achieved full University status in November 1994."
+        },
+        {
+            "question": [
+                "What is the current student population of the University?"
+            ],
+            "answer": "The University has a student population of about 28,000."
+        },
+        {
+            "question": [
+                "Where can you find more information about the campus and academic units of the University?",
+                "What is the website for more information about the University?"
+            ],
+            "answer": "You can find more information about the campus and academic units of the University on their comprehensive website at https://www.polyu.edu.hk/en/."
+        },
+        {
+            "question": [
+                "What is the structure of all PolyU academic programmes?",
+                "How do PolyU academic programmes respond to changing needs?",
+                "What benefits do students have due to the credit-based structure?",
+                "What is the value of credits in a credit-based programme?"
+            ],
+            "answer": "All PolyU academic programmes follow a credit-based structure. The adoption of a credit-based structure has enabled our study programmes to be more responsive to the changing needs of students, the professions, and the society. Students can take a range of subjects according to their interests and career plans and will have greater flexibility in pacing their studies."
+        },
+        {
+            "question": [
+                "How many hours of study are expected to earn one credit?",
+                "Is there a limit to the number of credits taken per semester at PolyU?",
+                "Where can students find detailed academic regulations for PolyU?",
+                "Where can undergraduate students find information on university requirements?"
+            ],
+            "answer": "To earn a credit, students are expected to take up about 35 to 45 hours of study (inclusive of contact hours, private study, etc.). Unless approved otherwise, the number of credits to be taken in each semester shall not exceed 21. The detailed academic regulations are available at https://www.polyu.edu.hk/ar/docdrive/university-calendar/HAR-Version-for-University-Calendar.pdf. Undergraduate students may also refer to the website of the Office of Undergraduate Studies (OUS) for details on the university requirements."
+        },
+        {
+            "question": [
+                "What is a NetID?",
+                "How is a NetID assigned?",
+                "What is the format of a NetID?"
+            ],
+            "answer": "All full-time and part-time students are assigned a Network Identity (NetID), which is the same as your Student Number but with the last alphabet in lowercase."
+        },
+        {
+            "question": [
+                "What is the purpose of a NetID?",
+                "What can you access with a NetID and NetPassword?"
+            ],
+            "answer": "With your NetID and NetPassword, you can have free access to the University’s central IT facilities and services, including eStudent, LEARN@PolyU, wired and wireless Internet connection, network storage, etc."
+        },
+        {
+            "question": [
+                "How is a PolyU Connect account related to the student number?",
+                "What services does PolyU Connect provide?"
+            ],
+            "answer": "A PolyU Connect account is based on the student number and provides email, communication, and collaboration services. It's used for important notices and information related to your study. PolyU Connect is where you can check messages from teachers and offices, including Academic Registry notices and Library notices."
+        },
+        {
+            "question": [
+                "What is the PolyULife mobile app?",
+                "What information does PolyULife provide?"
+            ],
+            "answer": "PolyULife is a native mobile app that helps students access essential information for study, such as personal class and exam timetables, payment due dates, and other notifications. It's available on App Store and Google Play."
+        },
+        {
+            "question": [
+                "Where can you obtain general information about the University?",
+                "What can you find on the PolyU Website?"
+            ],
+            "answer": "You can obtain general information about the University and useful information related to your studies and campus facilities on the PolyU Website at https://www.polyu.edu.hk."
+        },
+        {
+            "question": [
+                "Why is it important to change my NetPassword regularly?",
+                "What should I avoid doing with my NetPassword?"
+            ],
+            "answer": "For security reasons, you must change your NetPassword regularly, and you should never disclose your NetPassword to a third person. You are responsible for the actions taken using your NetID and NetPassword."
+        },
+        {
+            "question": [
+                "What can students access via eStudent at http://www.polyu.edu.hk/student/?",
+                "What is available on eStudent?",
+                "Where can students find study-related applications?"
+            ],
+            "answer": "Students can access various study-related applications provided by the Academic Registry via eStudent at http://www.polyu.edu.hk/student."
+        },
+        {
+            "question": [
+                "What types of information can be found online through eStudent?",
+                "What are the online services available on eStudent?"
+            ],
+            "answer": "The following types of information can be found online: Information (general information, subject search, and program search), My Profile (personal details and study information), My Subject Registration, My Timetable, My Results, Graduation, Application Forms, and My Advisor."
+        },
+        {
+            "question": [
+                "Where can students find notices about upcoming activities related to their study?",
+                "How can students stay informed about study-related activities?"
+            ],
+            "answer": "Notices on upcoming activities related to your study will be posted on eStudent. Students are advised to check this page regularly."
+        },
+        {
+            "question": [
+                "Are there links to other information/functions offered by the University on eStudent?",
+                "What additional resources are available on eStudent?"
+            ],
+            "answer": "Yes, students can also find links to various information/functions offered by other units of the University on eStudent."
+        },
+        {
+            "question": [
+                "How can I obtain the Programme Requirement Document for my program of study?",
+                "Where can I find information about my program's requirements?"
+            ],
+            "answer": "You will be issued a copy of the Programme Requirement Document for your program of study by the department offering the program at the commencement of your study."
+        },
+        {
+            "question": [
+                "What information does the Programme Requirement Document contain?",
+                "What details are included in the Programme Requirement Document?"
+            ],
+            "answer": "The Programme Requirement Document contains information on credit requirements, curriculum, program-specific assessment regulations, grading system, graduation requirements, and award classifications."
+        },
+        {
+            "question": [
+                "Can the Programme Requirement Document be updated?",
+                "Is the content of the Programme Requirement Document subject to change?"
+            ],
+            "answer": "Yes, the Programme Requirement Document may be updated by the program offering department from time to time. You will be informed of the changes as and when appropriate."
+        },
+        {
+            "question": [
+                "Where else can I find a copy of the Programme Requirement Document?",
+                "Is there another location where the document is available?"
+            ],
+            "answer": "A copy of the Programme Requirement Document can also be found in the PolyU Course Programmes Database of the Library."
+        },
+        {
+            "question": [
+                "Where can students access the Student Handbook?",
+                "How can students find the Student Handbook?",
+                "Is the Student Handbook accessible online?"
+            ],
+            "answer": "The Student Handbook is accessible from eStudent or at the Academic Registry (AR) website."
+        },
+        {
+            "question": [
+                "What does the Student Handbook contain?",
+                "What information is available in the Student Handbook?"
+            ],
+            "answer": "The Student Handbook contains essential information concerning general academic matters, general regulations and procedures, services and facilities for students, and various communication channels."
+        },
+        {
+            "question": [
+                "Where should students enrolling in postgraduate schemes/programs refer for additional information?",
+                "What is the resource for postgraduate students in terms of handbooks?"
+            ],
+            "answer": "Students enrolling on postgraduate schemes/programs should refer to the dissertation handbook at https://www2.polyu.edu.hk/ar/Polyu/PGDIS."
+        },
+        {
+            "question": [
+                "Are there specific handbooks for postgraduate students?",
+                "What additional handbook should postgraduate students check?"
+            ],
+            "answer": "Yes, postgraduate students should also refer to the dissertation handbook at https://www2.polyu.edu.hk/ar/Polyu/PGDIS."
+        },
+        {
+            "question": [
+                "What is the responsibility of the Academic Registry (AR)?",
+                "What areas does the Academic Registry cover?",
+                "What matters are handled by the Academic Registry?"
+            ],
+            "answer": "The Academic Registry (AR) is responsible for matters related to applicants and students, covering admissions, registrations, timetabling, examination, student records, certification, and awards."
+        },
+        {
+            "question": [
+                "Where can individuals find more details about the Academic Registry?",
+                "What is the web address for the Academic Registry website?"
+            ],
+            "answer": "You may visit the AR website at https://www.polyu.edu.hk/ar for more details."
+        },
+        {
+            "question": [
+                "How can individuals access frequently asked questions and answers related to the Academic Registry?",
+                "Where can I find the 'Help Centre' for the Academic Registry?"
+            ],
+            "answer": "You can click the “Help Centre” on the AR website at https://www.polyu.edu.hk/ar for frequently asked questions and answers."
+        },
+        {
+            "question": [
+                "Where is the Service Centre of the Academic Registry located?",
+                "What is the address of the Academic Registry Service Centre?",
+                "What is the location of the Academic Registry Service Centre?"
+            ],
+            "answer": "The Service Centre of the Academic Registry is located at Room M101 of the Li Ka Shing Tower."
+        },
+        {
+            "question": [
+                "How can students obtain various forms from the Academic Registry after the Centre is closed?",
+                "Is there a way for students to get forms from the Academic Registry after hours?"
+            ],
+            "answer": "Students can obtain various forms on a self-serviced arrangement after the Centre is closed."
+        },
+        {
+            "question": [
+                "What contact options are available for students to enquire with the Academic Registry?",
+                "How can students contact the Academic Registry?",
+                "What is the contact information for the Academic Registry?"
+            ],
+            "answer": "An automated interactive telephone hotline at (852)2333 0600 is available, and students may also enquire via email as listed on the AR website."
+        },
+        {
+            "question": [
+                "Where can individuals find the opening hours of the Academic Registry Service Centre?",
+                "What is the web address for the opening hours of the Academic Registry Service Centre?"
+            ],
+            "answer": "Please visit the AR website at https://www.polyu.edu.hk/ar/about-ar/contact-us/ for the opening hours of the Academic Registry Service Centre."
+        },
+        {
+            "question": [
+                "What office should I contact for programme-related information?",
+                "Where can I get information about the curriculum and assessment regulations of specific programmes?"
+            ],
+            "answer": "You can obtain most of the programme-related information from the general office of your programme offering department. Enquiries related to the curriculum, subject selection, and assessment regulations of specific programmes should be directed to your department or academic advisors."
+        },
+        {
+            "question": [
+                "What information should I provide when writing to the University?",
+                "If I want to make an enquiry in writing, what details should I include?"
+            ],
+            "answer": "If you wish to make an enquiry, a comment, or suggestion on matters concerning the University in writing, you are advised to provide your full name, student number, contact telephone number, address, and the programme enrolled. The University will not be able to take action on any correspondence which is anonymous (i.e. without information on the full name and student number)."
+        },
+        {
+            "question": [
+                "When do I need to confirm enrolment on my programme?",
+                "What is the deadline for settling tuition fees and other fees for Semester One?",
+                "When should I settle relevant fees for Semester Two?"
+            ],
+            "answer": "You need to confirm enrolment on your programme on a semester basis by settling the relevant tuition fees and other fees (e.g. credit transfer, exemption, etc.) in August or September (for Semester One) and in the following January (for Semester Two)."
+        },
+        {
+            "question": [
+                "How will I receive notifications about the fees I need to settle?",
+                "Where can I check the fee debit notes issued by the University?",
+                "When will I receive notification emails about fees for Semester One?"
+            ],
+            "answer": "You will receive the notification email via PolyU Connect Email from the Finance Office normally in August (for Semester One) and December (for Semester Two) on the fees that you need to settle. You can check at our Student Account Portal https://www40.polyu.edu.hk/fosae > Fees and Receipts > Outstanding Fees regarding the fee debit notes issued to you by the University and your payment status."
+        },
+        {
+            "question": [
+                "What do I need to do to confirm enrolment on a programme?",
+                "What is the process to confirm enrolment?",
+                "What is required to settle enrolment on a programme?"
+            ],
+            "answer": "To confirm your enrolment on a programme, normally you are only required to settle the fees and register for subjects for the semester concerned before the specified deadline."
+        },
+        {
+            "question": [
+                "Where can I find information about tuition fee payment schedules?",
+                "How can I access details about the Tuition Fee Payment Schedule?",
+                "What is the website for information on fee payment schedules?"
+            ],
+            "answer": "Tuition Fee Payment Schedule and details are available at https://www.polyu.edu.hk/ar/ under the AR Website > Students in Taught Programmes > Registration Information > Fee Payment or FO Website at https://www.polyu.edu.hk/fo/students/fee-and-payment/students-in-taught-programmes/tuition-and-other-fees > 5. Tuition fee payment schedules."
+        },
+        {
+            "question": [
+                "What will be issued upon the first registration on the study programme?",
+                "What entitles a student to the rights and privileges of a full-time or part-time student?"
+            ],
+            "answer": "Upon your first registration on the study programme, a student identity card will be issued to you. You are entitled to the rights and privileges of a full-time or part-time student, as appropriate, upon fulfilling the criteria for progression for the period, having duly paid the tuition and other fees (e.g., caution money), and having completed the subject registration procedures."
+        },
+        {
+            "question": [
+                "Why do I need to carry my student identity card?",
+                "When should I present my student identity card at PolyU?"
+            ],
+            "answer": "You need to present your student identity card when entering PolyU, and you should carry it at all times while on the University premises as it enables you to gain access to various facilities of the University. The student identity card will become invalid upon the cardholder’s completion of graduation requirements or cessation of study."
+        },
+        {
+            "question": [
+                "What happens to service provisions for students once their status has ended?",
+                "When will service provisions generally not be available for students?"
+            ],
+            "answer": "Different units have their own service provisions and effective service periods for different types of students. Generally speaking, service provisions will not be available once the student status has ended or students have completed their studies and are eligible for award, regardless of the expiry date printed on the student identity card."
+        },
+        {
+            "question": [
+                "Where can students or graduands get more information about service provisions and arrangements?",
+                "How can I find out about service provisions for students at PolyU?"
+            ],
+            "answer": "Students/Graduands can contact individual offices for more information (https://www.polyu.edu.hk/ar/docdrive/polyu-students/student-handbook/special_arrangements.pdf)."
+        },
+        {
+            "question": [
+                "When do student identity cards normally expire?",
+                "What should I do if my student identity card expires and I am eligible to continue my study?"
+            ],
+            "answer": "Student identity cards will normally expire at the end of Semester One or an academic year. If you are eligible to continue with your study after the expiry of your student identity card, please collect the renewed student identity card at the Academic Registry Service Centre during office hours in the last week of August (for student identity cards expiring at the end of an academic year) or in the last week of January (for student identity cards expiring at the end of Semester One)."
+        },
+        {
+            "question": [
+                "Where can I collect the renewed student identity card?",
+                "During which weeks should I collect the renewed student identity card?"
+            ],
+            "answer": "You can collect the renewed student identity card at the Academic Registry Service Centre during office hours in the last week of August (for student identity cards expiring at the end of an academic year) or in the last week of January (for student identity cards expiring at the end of Semester One)."
+        },
+        {
+            "question": [
+                "Who is eligible to collect the renewed student identity card?",
+                "Is the renewal process applicable to students who have transferred to another programme of a different mode?"
+            ],
+            "answer": "The renewal process is applicable to students who are eligible to continue with their study after the expiry of their student identity card, including those who have transferred to another programme of a different mode (i.e. from full-time to part-time or vice versa)."
+        },
+        {
+            "question": [
+                "What should I do with the student identity card?",
+                "How should I return the card to the university?",
+                "Where should I return the student identity card?"
+            ],
+            "answer": "You are advised to return the card in person to the Academic Registry."
+        },
+        {
+            "question": [
+                "Can you transfer your student identity card to someone else?",
+                "Is the student identity card transferable?",
+                "What is the status of student identity cards in terms of transfer?"
+            ],
+            "answer": "Student identity cards are not transferable."
+        },
+        {
+            "question": [
+                "What should I do if I prefer to return the card by post?",
+                "How can I prevent fraudulent use of the card I returning by post?",
+                "What precaution is suggested for returning the card by post?"
+            ],
+            "answer": "If you prefer to return it by post, you are urged to cut it into halves."
+        },
+        {
+            "question": [
+                "What are the consequences of lending your student identity card to someone else?",
+                "What actions can be taken if you misuse your student identity card?",
+                "What disciplinary actions may be taken for misuse of the student identity card?"
+            ],
+            "answer": "If you lend your student identity card or use a card that does not belong to you, you are liable to disciplinary actions, which may include temporary deprivation of student rights, suspension, or termination of studies."
+        },
+        {
+            "question": [
+                "How should I take care of my student identity card?",
+                "What is advised to prevent disciplinary actions related to the student identity card?",
+                "What precautions should I take with my student identity card?"
+            ],
+            "answer": "You should take good care of your student identity card."
+        },
+        {
+            "question": [
+                "What should I do if my student identity card is lost, damaged, or if I need to amend my name?",
+                "How can I apply for a replacement student identity card?",
+                "Is there a fee for getting a replacement student identity card?"
+            ],
+            "answer": "You should submit an application for a replacement online, and a replacement fee will be charged for the new student identity card."
+        },
+        {
+            "question": [
+                "What should I do if I find the original student identity card after getting a replacement?",
+                "Where should I return the original card if found after replacement?",
+                "What is the procedure for dealing with the original card if it is found later?"
+            ],
+            "answer": "If the original student identity card is subsequently found, you should immediately return it to the Academic Registry for cancellation."
+        },
+        {
+            "question": [
+                "Is it permissible to possess more than one student identity card for the same programme?",
+                "What is considered an offence in terms of possessing student identity cards?",
+                "What actions may be taken if you are found possessing more than one student identity card for the same programme?"
+            ],
+            "answer": "It is an offence to possess more than one student identity card for the same programme at any time during your studies at the University, and you shall be subject to disciplinary actions if found committing this offence."
+        },
+        {
+            "question": [
+                "What is the purpose of this personal information collection statement (PICS)?",
+                "Under what ordinance does this PICS fall?",
+                "Who is responsible for the personal data collected under this statement?"
+            ],
+            "answer": "This is a personal information collection statement under the Personal Data (Privacy) Ordinance (“the Ordinance”)."
+        },
+        {
+            "question": [
+                "What are the purposes of collecting personal data during the application for admission?",
+                "How is personal data used during the application process?",
+                "What is the role of personal data in the selection process for admission?"
+            ],
+            "answer": "The personal data provided during the application for admission will be used as a basis for selection, managing the application account, processing the application, identifying possible multiple applications, obtaining records of existing and previous studies, verifying identity and qualifications, conducting statistical analysis, research, surveys, quality assurance, review, facilitating communications between the applicant and PolyU, and for other purposes directly relating to any of the above."
+        },
+        {
+            "question": [
+                "What happens to the personal data if an application for admission is not accepted?",
+                "How is the personal data handled if the application is unsuccessful?",
+                "According to what policy will the personal data be disposed of if the application is not accepted?"
+            ],
+            "answer": "In case the application is not accepted, the personal data provided during the application will be disposed of according to the prevailing policy of PolyU."
+        },
+        {
+            "question": [
+                "What happens to the personal data upon admission as a student of PolyU?",
+                "What becomes of the personal data provided during the application once admitted as a student?",
+                "How is the personal data used once admitted to PolyU?"
+            ],
+            "answer": "Upon admission as a student of PolyU, the personal data provided during the application becomes part of the official student records."
+        },
+        {
+            "question": [
+                "What are some of the specific uses of personal data after admission as a student?",
+                "How is personal data utilized throughout the student's academic journey at PolyU?",
+                "In addition to admission, for what purposes is personal data used during the student's studies at PolyU?"
+            ],
+            "answer": "The personal data provided during application for admission, throughout the studies, and upon leaving PolyU is used for purposes such as managing application accounts, conducting statistical analysis, research, surveys, quality assurance, facilitating communications, and other purposes directly relating to these activities."
+        },
+        {
+            "question": [
+                "Under what ordinance is this personal information collection statement provided?",
+                "What is the purpose of this personal information collection statement?",
+                "Which ordinance does this statement fall under?"
+            ],
+            "answer": "This is a personal information collection statement under the Personal Data (Privacy) Ordinance (“the Ordinance”)."
+        },
+        {
+            "question": [
+                "What are some purposes for collecting personal information during study and upon leaving PolyU?",
+                "Why is personal information collected during study at PolyU?",
+                "For what reasons is personal information collected by PolyU during study and upon leaving?"
+            ],
+            "answer": "The purposes include processing applications for activities, services, and facilities provided by units and departments of PolyU or organizations associated with PolyU, managing alumni affairs, verifying student/graduate status, qualifications, and academic records, conducting statistical analysis, research, surveys, quality assurance and review, and facilitating communications between students and PolyU."
+        },
+        {
+            "question": [
+                "What is done with personal information in the case of admission to a jointly offered or collaborated programme?",
+                "Where might personal data be transferred in case of joint programmes?",
+                "Are there situations where personal data is transferred to partner institutions?"
+            ],
+            "answer": "In the case of admission to a programme jointly offered or collaborated by PolyU and its partner institution(s), personal data will be transferred to the partner institution(s) for various purposes mentioned in the statement."
+        },
+        {
+            "question": [
+                "What contact information is required in case of emergency?",
+                "Who should be provided as an emergency contact?",
+                "What is the procedure for providing emergency contact information?"
+            ],
+            "answer": "You are required to provide an emergency contact, other than yourself, in case of emergency."
+        },
+        {
+            "question": [
+                "Who has access to and handles your personal data at PolyU?",
+                "Is your personal data kept confidential at PolyU?",
+                "Who are the authorized individuals handling personal data at PolyU?"
+            ],
+            "answer": "PolyU will keep your personal data confidential, and only authorised staff members of PolyU will have access to and handle your personal data."
+        },
+        {
+            "question": [
+                "To whom may PolyU disclose or transfer your personal data?",
+                "What parties may receive your personal data within or outside Hong Kong?",
+                "For what purposes may your personal data be disclosed or transferred by PolyU?"
+            ],
+            "answer": "PolyU may disclose or transfer your personal data to PolyU’s student organisations and alumni organisations, agencies, service providers, contractors engaged in activities on behalf of PolyU, other education institutions, their subsidiaries, relevant organisations, and government authorities in Hong Kong or other places for verification of qualifications obtained from PolyU. This is solely for the purposes set out in paragraph (a) above."
+        },
+        {
+            "question": [
+                "Under what circumstances may PolyU disclose your personal data as required by law?",
+                "In what situations may PolyU disclose personal data in response to requests from law enforcement agencies?",
+                "When may PolyU disclose personal data to government departments or regulatory authorities?"
+            ],
+            "answer": "PolyU may disclose your personal data when authorised or required by law and in response to requests from law enforcement agencies, government departments, or regulatory authorities."
+        },
+        {
+            "question": [
+                "What rights do you have regarding your personal data held by PolyU?",
+                "What can you request in relation to your personal data at PolyU?",
+                "Is there a fee associated with data access requests at PolyU?"
+            ],
+            "answer": "You have the right to request access to and correction of your personal data held by PolyU. A fee may be imposed by PolyU for processing your data access request."
+        },
+        {
+            "question": [
+                "How can access and correction of personal data be performed during the application for admission and studies?",
+                "Which online platforms can be used for accessing and correcting personal data during studies at PolyU?",
+                "What is the process for accessing personal data during studies at PolyU?"
+            ],
+            "answer": "During the application for admission and studies, access and correction of personal data can be performed via the relevant online platforms (i.e., eAdmission for applicants and eStudent for students)."
+        },
+        {
+            "question": [
+                "How should access of personal data not available on online platforms be made according to the Ordinance?",
+                "What is the procedure for accessing personal data not available online at PolyU?",
+                "Where should the Data Access Request Form be sent for personal data not available online according to the Ordinance?"
+            ],
+            "answer": "Access of personal data not available on online platforms according to the Ordinance should be made by completing the Personal Data (Privacy) Ordinance Data Access Request Form and sending it to the Academic Registry at ar.dept@polyu.edu.hk."
+        },
+        {
+            "question": [
+                "After graduation, how can access and correction of personal information in the alumni records be done?",
+                "Where can you access and correct personal information after graduation from PolyU?",
+                "What is the process for accessing personal information in alumni records after graduation?"
+            ],
+            "answer": "After graduation, access and correction of personal information in the alumni records can be done on “My Profile & eCard” at https://www.polyu.edu.hk/alumni."
+        },
+        {
+            "question": [
+                "How should access of personal information not available on the alumni website be made according to the Ordinance?",
+                "What is the procedure for accessing personal information not available on the alumni website?",
+                "Where should the Data Access Request Form be sent for personal information not available on the alumni website according to the Ordinance?"
+            ],
+            "answer": "Access of personal information not available at the alumni website according to the Ordinance should be made by completing the Personal Data (Privacy) Ordinance Data Access Request Form and sending it to the Alumni Affairs and Development Office at alumni@polyu.edu.hk."
+        },
+        {
+            "question": [
+                "What information is kept in permanent records?",
+                "What is monitored during your study?",
+                "What is kept for reference when certification is required?"
+            ],
+            "answer": "Besides the information collected at the time of application, your registration details and assessment results are also kept in your permanent records for monitoring your progress during your study and for reference when certification is required."
+        },
+        {
+            "question": [
+                "What information is published in the Graduates List?",
+                "Who is mentioned in the Graduates List?",
+                "What details are included for students with First Class Honours and Distinction?"
+            ],
+            "answer": "Names of graduates, together with information on the award title, and classification of award (for students with First Class Honours and Distinction only), will be published in a Graduates List for the use of Congregation."
+        },
+        {
+            "question": [
+                "When might the University write to your secondary school?",
+                "Under what circumstances does the University express gratitude to your secondary school?",
+                "Why would the University contact your secondary school?"
+            ],
+            "answer": "The University might also write to your secondary school to thank them for sending a good student to the University in case you have been awarded a First Class Honours Degree or a Distinction in your studies."
+        },
+        {
+            "question": [
+                "Which departments may keep records related to your study?",
+                "Who maintains records related to your study?",
+                "Where are records related to your study kept?"
+            ],
+            "answer": "Your programme offering departments may also keep records related to your study."
+        },
+        {
+            "question": [
+                "Which offices keep records if you have requested/used services?",
+                "Where are records kept if you use services provided by the University Health Service, the Library, the Student Affairs Office, etc.?",
+                "What records are kept if you utilize services offered by specific offices in the University?"
+            ],
+            "answer": "If you have requested/used services provided by the University Health Service, the Library, the Student Affairs Office, the Information Technology Services Office, and the Campus Facilities and Sustainability Office or any other offices in the University, appropriate records will also be kept by these offices."
+        },
+        {
+            "question": [
+                "Who has access to student data?",
+                "Which departments/staff can access student data?"
+            ],
+            "answer": "Only authorised departments/staff of the University."
+        },
+        {
+            "question": [
+                "When will student data be deleted?",
+                "What determines the deletion of student data?"
+            ],
+            "answer": "Student data will be deleted when they are no longer required according to the relevant rules."
+        },
+        {
+            "question": [
+                "How often are retention policies reviewed?",
+                "Who reviews retention policies regularly?"
+            ],
+            "answer": "Retention policies will be reviewed regularly by the respective offices."
+        },
+        {
+            "question": [
+                "What is the right granted by the Personal Data (Privacy) Ordinance?",
+                "Under the Personal Data (Privacy) Ordinance, what rights do you have?"
+            ],
+            "answer": "You have the right to access and correct your personal data and also to request a copy of such data."
+        },
+        {
+            "question": [
+                "How can one access personal data?",
+                "What is the process to access personal data in the records?"
+            ],
+            "answer": "You may submit a request via the 'Data Access Request Form', obtainable at the Academic Registry Service Centre. A handling fee will be charged."
+        },
+        {
+            "question": [
+                "Where can the 'Data Access Request Form' be obtained?",
+                "From where can one get the 'Data Access Request Form'?"
+            ],
+            "answer": "The 'Data Access Request Form' is obtainable at the Academic Registry Service Centre."
+        },
+        {
+            "question": [
+                "Who may send information concerning study and registration?",
+                "Which offices may send information about study and registration?"
+            ],
+            "answer": "Your department or lecturers/advisors and offices of the University, such as Academic Registry, Library, Information Technology Services Office, and the Student Affairs Office through PolyU Connect."
+        },
+        {
+            "question": [
+                "Where should I check for messages about study and registration?",
+                "What platform should I regularly check for messages about study and registration?"
+            ],
+            "answer": "You are advised to check for messages in your PolyU Connect Email account regularly."
+        },
+        {
+            "question": [
+                "What should students keep updated during their study?",
+                "How can students update their contact information?",
+                "Why is it important for students to update their correspondence address?"
+            ],
+            "answer": "Students should keep their residential/correspondence address and mobile number updated. They can update their contact information directly via eStudent. It is important to update the correspondence address so that relevant university officers can reach the next of kin in case of emergencies."
+        },
+        {
+            "question": [
+                "Where can students update their contact information?",
+                "In case of emergencies, who will be contacted if the student is under 18?",
+                "What communication methods may the University use to contact students?"
+            ],
+            "answer": "Students can update their contact information directly via eStudent. In case of emergencies and if the student is under 18, the next of kin (parents/guardian) will be contacted. The University may contact students by phone, SMS, or post as necessary."
+        },
+        {
+            "question": [
+                "For students living away from home, what is important to update?",
+                "Why is updating contact information crucial for student-hostel residents?",
+                "How can students update their student records in the University?"
+            ],
+            "answer": "For students living away from home, it is important to update their correspondence address. Updating contact information is crucial for student-hostel residents so that relevant university officers can reach their next of kin in emergencies. Students can update their student records in the University by keeping their residential/correspondence address and mobile number updated."
+        },
+        {
+            "question": [
+                "Where can students update their information?",
+                "Is there a limit to the duration during which students can update their information?",
+                "How can students access the eStudent system?"
+            ],
+            "answer": "Students can update their information directly on the web during their study and up to their graduation and completion of the university congregation ceremony. There is no specific limit mentioned. Students can access the eStudent system by logging in at http://www.polyu.edu.hk/student."
+        },
+        {
+            "question": [
+                "What can students view online in eStudent?",
+                "When is a hard copy of Form AR1 required?",
+                "What information requires a hard copy for amendment?"
+            ],
+            "answer": "Students can view their personal particulars online in eStudent. A hard copy of Form AR1 is required for the amendment of name, date of birth, HKID card/Passport/Mainland ID card No., nationality, or gender. The hard copy must be accompanied by the original and a copy of relevant supporting document(s)."
+        },
+        {
+            "question": [
+                "What happens to the information of a graduate/leaver after an amendment?",
+                "Is there a specific form for amending certain information?",
+                "What documents are required for amending name, date of birth, or gender?"
+            ],
+            "answer": "No update will be made to the information of a graduate/leaver after an amendment. Form AR1 is required for amending certain information like name, date of birth, HKID card/Passport/Mainland ID card No., nationality, or gender. The application/supporting document(s) for the amendment will be kept in the student's record."
+        },
+        {
+            "question": [
+                "What specifies the normal duration for completion of a program?",
+                "Where can you find the normal duration for completion of a program?",
+                "In what document is the normal duration for completion mentioned?"
+            ],
+            "answer": "The normal duration for completion of a program is specified in the Programme Requirement Document, which is issued by the Department at the commencement of the study."
+        },
+        {
+            "question": [
+                "When will you receive the Programme Requirement Document?",
+                "At what point is the Programme Requirement Document issued?",
+                "When does the Department issue the Programme Requirement Document?"
+            ],
+            "answer": "The Programme Requirement Document will be issued to you by your Department at the commencement of your study."
+        },
+        {
+            "question": [
+                "What happens if students admitted in or after 2020/21 exceed the normal duration for completion?",
+                "Is there a consequence for exceeding the normal duration for completion for students admitted in or after 2020/21?",
+                "What is the consequence for students who exceed the normal duration for completion after 2020/21?"
+            ],
+            "answer": "Students admitted in or after 2020/21 will be de-registered from the program if they exceed the normal duration for completion, unless prior approval for 'Extension of Study Duration' has been obtained from relevant authorities."
+        },
+        {
+            "question": [
+                "Is there an exception for students admitted in or after 2020/21 who exceed the normal duration for completion?",
+                "What is the condition for not being de-registered for students admitted in or after 2020/21 who exceed the normal duration for completion?",
+                "Under what circumstance will students admitted in or after 2020/21 not be de-registered for exceeding the normal duration for completion?"
+            ],
+            "answer": "Students admitted in or after 2020/21 will not be de-registered for exceeding the normal duration for completion if they obtain prior approval for 'Extension of Study Duration' from relevant authorities."
+        },
+        {
+            "question": [
+                "What is the maximum period allowed for students to register on a program?",
+                "How long can students register on a program?",
+                "What is the duration limit for student registration on a program?"
+            ],
+            "answer": "The maximum period allowed for students to register on a program is normally twice the normal duration and must not exceed eight years."
+        },
+        {
+            "question": [
+                "Where is the stipulated maximum period of registration mentioned?",
+                "In which document is the maximum period of registration specified?",
+                "What document contains information about the maximum period of registration?"
+            ],
+            "answer": "The stipulated maximum period of registration is mentioned in the individual Programme Requirement Document."
+        },
+        {
+            "question": [
+                "Does the fact that a student's maximum period of registration has not expired guarantee their continued status as a student?",
+                "Is the expiration of the maximum period of registration the only factor in determining a student's status?",
+                "Is the sole basis for a student's continued status the non-expiration of their maximum period of registration?"
+            ],
+            "answer": "No, the fact that a student's maximum period of registration has not expired by itself does not entitle them to remain as a student of the University."
+        },
+        {
+            "question": [
+                "Under what circumstance does a student's registration lapse?",
+                "In what situation will a student's registration no longer be possible?",
+                "What leads to the lapse of a student's registration?"
+            ],
+            "answer": "A student's registration shall lapse if it is no longer possible for him/her to obtain the designated award within the maximum period of registration."
+        },
+        {
+            "question": [
+                "What should I do if you need to be absent from class temporarily during the academic year?",
+                "How can I obtain approval for being absent from class temporarily?",
+                "What form should I submit to obtain approval for temporary absence from class?"
+            ],
+            "answer": "If you need to be absent from class for a temporary period during the academic year, you must obtain approval from the Head of Department concerned by submitting Form AR8."
+        },
+        {
+            "question": [
+                "Is attendance in classes allowed if I am infected by contagious diseases?",
+                "What should I do if you are infected by contagious diseases in relation to attending classes?",
+                "Is it recommended to attend classes if you are infected by contagious diseases?"
+            ],
+            "answer": "You should not attend classes if you are infected by contagious diseases."
+        },
+        {
+            "question": [
+                "Is the granting of leave of absence automatic?",
+                "What should I keep in mind about the granting of leave of absence?",
+                "Is there a specific process for the granting of leave of absence?"
+            ],
+            "answer": "The granting of leave of absence is not automatic. All applications should be made as early as possible before the leave is taken. The department concerned will inform you of the approval, or otherwise, of your application."
+        },
+        {
+            "question": [
+                "What should I do if I am absent from an examination due to sickness or other circumstances beyond your control?",
+                "To whom should I apply if I am absent from an examination?",
+                "Is there a process for applying for absence from an examination due to sickness or other circumstances?"
+            ],
+            "answer": "If you are absent from an examination owing to sickness or other circumstances beyond your control, you have to apply to the Head of Department offering the subject with supporting documents (please also refer to section 6H on 'Late Assessment')."
+        },
+        {
+            "question": [
+                "What happens if I enroll concurrently in two full-time programs?",
+                "Is it allowed to enroll in two full-time programs simultaneously?",
+                "What are the consequences of enrolling in two full-time programs without approval?"
+            ],
+            "answer": "Failure to obtain written approval will result in discontinuation of your study at PolyU and the tuition fees paid for the programme(s) will not be refunded."
+        },
+        {
+            "question": [
+                "Can I enroll in a full-time program and a part-time program simultaneously?",
+                "Is approval required for enrolling in a full-time and a part-time program together?",
+                "How should I proceed if I want to enroll in a full-time and a part-time program?"
+            ],
+            "answer": "For enrolling on a full-time programme and a part-time programme, or on more than one part-time programme leading to any formal award, including those offered by another institution, you are required to obtain approval from the PolyU Head(s) of Department concerned prior to enrolment."
+        },
+        {
+            "question": [
+                "Where can I obtain the application form for concurrent enrollment?",
+                "What is Form AR38 used for in the context of concurrent enrollment?",
+                "How can I apply for concurrent enrollment at PolyU?"
+            ],
+            "answer": "Those who wish to apply for concurrent enrolment should download an application for concurrent enrolment (Form AR38) or get a copy at the Academic Registry Service Centre. Please return the form to the Academic Registry before registration on the programme(s) concerned."
+        },
+        {
+            "question": [
+                "Is the University responsible for making special timetable arrangements for students with concurrent enrolment?",
+                "What should students with concurrent enrolment note regarding class and examination timetables?",
+                "Are special timetable arrangements made for students with clashes in class and examination timetables?"
+            ],
+            "answer": "Students who have been granted approval for concurrent enrolment should note that the University is not responsible for making special timetable arrangements in case of clashes in class and examination timetables."
+        },
+        {
+            "question": [
+                "Under what circumstances can I apply for deferment of study?",
+                "Are there specific conditions for applying for deferment of study?",
+                "What constitutes a genuine need for deferment of study?"
+            ],
+            "answer": "You may apply for deferment of study if you have a genuine need to do so, such as prolonged illness or being posted to work outside Hong Kong."
+        },
+        {
+            "question": [
+                "Who is eligible to apply for deferment of study?",
+                "Can all students apply for deferment of study?",
+                "Are there any restrictions on applying for deferment of study?"
+            ],
+            "answer": "Applications from students who have not yet completed the first year of a full-time programme will be considered only under exceptional circumstances."
+        },
+        {
+            "question": [
+                "How is the deferment period counted towards the total period of registration?",
+                "Does the deferment period count towards the maximum period of registration for students admitted in or before 2019/20?",
+                "Is the deferment period included in the total registration period?"
+            ],
+            "answer": "The deferment period will not be counted towards the total period of registration (or maximum period of registration for students admitted in or before 2019/20)."
+        },
+        {
+            "question": [
+                "How can I submit an application for deferment of study?",
+                "Where should I send my application for deferment of study?",
+                "Is there a specific platform for submitting applications for deferment of study?"
+            ],
+            "answer": "You are required to submit an application for deferment of study via eStudent to the programme offering department."
+        },
+        {
+            "question": [
+                "How will I be notified of the result of my deferment application?",
+                "What is the expected timeframe for receiving the result of a deferment application?",
+                "In what form will I receive the result of my deferment application?"
+            ],
+            "answer": "You will be informed of the result of your application in writing or via email by the department normally within three weeks from the date of application."
+        },
+        {
+            "question": [
+                "What is the requirement for processing an application for deferment after the start of a semester?",
+                "Is settling outstanding tuition fees necessary for processing a deferment application submitted after the semester begins?",
+                "What should I do if I want to defer my study after the semester has started?"
+            ],
+            "answer": "It is necessary for you to settle all the outstanding tuition fees and/or other fees in order to have your application for deferment processed if the application is submitted after the start of a semester."
+        },
+        {
+            "question": [
+                "Are all fees paid refundable and transferable?",
+                "Is there any refund for fees paid if I defer my study?",
+                "What is the refund policy for tuition fees in case of deferment for new students on UGC-funded programmes?"
+            ],
+            "answer": "All fees paid are non-refundable and non-transferable. However, new students enrolled on UGC-funded programmes who apply for deferment of study before the commencement of the relevant semester will be eligible for a refund of the tuition fee paid for that semester after deducting an initial fee (of HK$5,000 for local students and HK$15,000 for non-local students)."
+        },
+        {
+            "question": [
+                "Is there a waiver for the deduction of the initial fee for current students applying for deferment?",
+                "Do current students need to pay the initial fee when applying for deferment?",
+                "Are current students subject to the deduction of the initial fee when deferring their study?"
+            ],
+            "answer": "The deduction of such fee will, however, be waived for current students."
+        },
+        {
+            "question": [
+                "Will students approved for deferment have access to campus facilities and services?",
+                "Are students with approved deferment eligible for accessing campus facilities/services?",
+                "What happens to the campus facility and service access for students with approved deferment?"
+            ],
+            "answer": "Students approved for deferment of study will normally not be eligible to access the campus facilities/services. Students can check for further details from the relevant service providing units."
+        },
+        {
+            "question": [
+                "How can I retain my study place if I choose not to defer but still want to take a break from subjects?",
+                "What is 'Zero Subject Enrolment and Retention of Study Place' in Section 4I?",
+                "What should I do if I want to retain my study place but not enroll in any subjects?"
+            ],
+            "answer": "Alternatively, you may apply for zero subject enrolment to retain your study place. (Please also refer to section 4I on “Zero Subject Enrolment and Retention of Study Place”.)"
+        },
+        {
+            "question": [
+                "What can students who have been approved for deferment of study retain for future use?",
+                "Is it possible to retain the student identity card during a deferment period?",
+                "What is the status of the student identity card for those approved for deferment of study?"
+            ],
+            "answer": "Students who have been approved for deferment of study can retain their student identity card for use upon their resumption of study."
+        },
+        {
+            "question": [
+                "What should I do upon the expiry of the deferment period?",
+                "What are the advised actions for students after the deferment period ends?",
+                "Is there any specific guidance for students when the deferment period concludes?"
+            ],
+            "answer": "You will be advised to settle the tuition fee and complete the subject registration procedures upon expiry of the deferment period."
+        },
+        {
+            "question": [
+                "What should I do if I haven't received notification regarding settling tuition fees and subject registration one week before the semester starts?",
+                "Is there a specific time frame for receiving notification about settling fees and subject registration after deferment?",
+                "What if I don't receive notification one week before the Semester regarding settling tuition fees and subject registration?"
+            ],
+            "answer": "If you do not receive such notification one week before the commencement of the Semester, you should enquire at the Academic Registry."
+        },
+        {
+            "question": [
+                "What should I do if I do not wish to take any subject in a semester?",
+                "How can I retain my study place if I don't want to enroll in any subjects?",
+                "When should I submit my application for zero subject enrolment to retain my study place?"
+            ],
+            "answer": "If you do not wish to take any subject in a semester, you must seek approval from your department to retain your study place by submitting your application via eStudent before the start of the semester and in any case not later than the end of the add/drop period."
+        },
+        {
+            "question": [
+                "What happens if I don't seek approval for zero subject enrolment?",
+                "What are the consequences if I fail to retain my study place by seeking approval for zero subject enrolment?",
+                "What is the outcome if I don't apply for zero subject enrolment approval?"
+            ],
+            "answer": "Otherwise, your student status with the University will be withdrawn."
+        },
+        {
+            "question": [
+                "How will the semesters with zero subject enrolment be counted?",
+                "Will the semesters in which I take zero subjects be included in the total period of registration?",
+                "Do semesters with zero subject enrolment count towards the maximum period of registration?"
+            ],
+            "answer": "Unless otherwise approved, the semesters during which you are allowed to take zero subjects will be counted towards the total period of registration for the programme concerned."
+        },
+        {
+            "question": [
+                "When can I expect to receive the result notification after applying for zero subject enrolment?",
+                "How long does it take to get the result notification after applying for zero subject enrolment?",
+                "Within what timeframe will I receive the result notification for zero subject enrolment?"
+            ],
+            "answer": "You will receive result notification from the department normally within two weeks."
+        },
+        {
+            "question": [
+                "Can I still use campus facilities if I have been approved for zero subject enrolment?",
+                "Are students with zero subject enrolment approval allowed to use campus facilities?",
+                "Do I have access to library facilities if I am approved for zero subject enrolment?"
+            ],
+            "answer": "Students who have been approved for zero subject enrolment are allowed to continue using campus facilities, including library facilities."
+        },
+        {
+            "question": [
+                "How much is the fee for retaining my study place with zero subject enrolment?",
+                "What is the cost for keeping my study place with zero subject enrolment?",
+                "How much will I be charged for retaining my study place if I don't enroll in any subjects?"
+            ],
+            "answer": "A fee of HK$2,105 per semester for retention of study place will be charged."
+        },
+        {
+            "question": [
+                "What circumstances will be considered for a transfer of study?",
+                "Under what conditions is the transfer of study allowed?",
+                "In what situations is the transfer of study considered?"
+            ],
+            "answer": "Transfer of study will only be considered in exceptional circumstances."
+        },
+        {
+            "question": [
+                "When will new students be considered for transfer to another programme?",
+                "At what point can a new student apply for a transfer to another program?",
+                "In which semester can a new student request a transfer to another program?"
+            ],
+            "answer": "New students will only be considered for transfer to another programme starting from their second semester of registration."
+        },
+        {
+            "question": [
+                "What is the policy regarding transfer for UGC-funded program students?",
+                "For UGC-funded program students, what should be submitted for a transfer of study?",
+                "What application should UGC-funded program students submit if they want to transfer to a similar level program at PolyU?"
+            ],
+            "answer": "If you are registered in a UGC-funded programme and wish to transfer to another PolyU UGC-funded programme of the same level of award, you should submit an application for transfer of study."
+        },
+        {
+            "question": [
+                "Who is not allowed to submit a further application for transfer of study to full-time programs within PolyU?",
+                "Are current Higher Diploma students who applied via JUPAS allowed to submit a transfer of study application?",
+                "In what situation are JUPAS applicants from Higher Diploma programs restricted from applying for transfer of study?"
+            ],
+            "answer": "Current Higher Diploma students who have chosen to submit an application via JUPAS are not allowed to submit a further application for transfer of study to full-time programs within PolyU."
+        },
+        {
+            "question": [
+                "Under what conditions will applications for transfer of study be considered?",
+                "What is required for transfer of study applications to be considered?",
+                "What is the key factor for the consideration of transfer of study applications?"
+            ],
+            "answer": "Applications for transfer of study can only be considered subject to availability of places."
+        },
+        {
+            "question": [
+                "How should applications for transfer of study be submitted?",
+                "What is the required form for transfer of study applications?",
+                "What form should be used for submitting transfer of study applications?"
+            ],
+            "answer": "Applications for transfer of study should be made via Form AR25."
+        },
+        {
+            "question": [
+                "What is the definition of full-time students?",
+                "How are full-time students classified?",
+                "What is expected from students on full-time programmes?"
+            ],
+            "answer": "Students enrolled on full-time programmes are classified as full-time students. They are expected to devote the whole of their time to study even though they may or may not follow the specified progression pattern."
+        },
+        {
+            "question": [
+                "What should I do if I want to take a study load of less than 9 credits in a semester as a full-time student?",
+                "How can I request to take fewer than 9 credits in a semester as a full-time student?",
+                "What is the process for seeking approval to take a reduced study load as a full-time student?"
+            ],
+            "answer": "Students on full-time programmes who wish to take a study load of less than 9 credits in a semester will have to seek prior approval from their department by submitting an application via Form AR121 before the end of the add/drop period."
+        },
+        {
+            "question": [
+                "What options do students admitted in or before 2017/18 have if they want to take a study load of less than 9 credits?",
+                "How can students admitted in or before 2017/18 pay credit fees if they take fewer than 9 credits?",
+                "What is the process for students admitted in or before 2017/18 to pay credit fees for a reduced study load?"
+            ],
+            "answer": "Students admitted in or before 2017/18 will be given the option to pay credit fees upon the approval of taking a study load of less than 9 credits. If you wish to exercise this option, you are required to apply via Form AR121 and you need to pay tuition fee for subject(s) you will be taking in the Summer Term of that academic year."
+        },
+        {
+            "question": [
+                "What is the requirement for students admitted in or after 2018/19 to UGC-funded programmes regarding fees?",
+                "How are fees structured for students admitted in or after 2018/19 to UGC-funded programmes?",
+                "Do students admitted in or after 2018/19 have to pay credit fees based on the number of credits they take?"
+            ],
+            "answer": "Students admitted in or after 2018/19 to UGC-funded programmes are required to pay a flat fee during the normal duration of the programme, regardless of the number of credits registered in a semester. Students studying beyond the normal duration also have to pay a flat fee if they take 9 or more credits per semester. Students who take less than 9 credits per semester will pay the credit fees."
+        },
+        {
+            "question": [
+                "What is the classification for students with a study load of less than 9 credits in a semester?",
+                "How are students enrolling in part-time, distance learning, online, and mixed-mode programs classified?",
+                "Who is considered a part-time student?"
+            ],
+            "answer": "Part-time students"
+        },
+        {
+            "question": [
+                "What is the study load threshold for classifying students as part-time?",
+                "How many credits in a semester define a part-time student?",
+                "When is a student considered part-time?"
+            ],
+            "answer": "Less than 9 credits in a semester"
+        },
+        {
+            "question": [
+                "What types of programs do part-time students enroll in?",
+                "Which study modes are associated with part-time student classification?",
+                "For what kind of programs are students considered part-time?"
+            ],
+            "answer": "Part-time, distance learning, online, and mixed-mode programs"
+        },
+        {
+            "question": [
+                "Do part-time students have to pay credit fees?",
+                "What is the fee structure for part-time students?",
+                "Is there a fee for part-time students?"
+            ],
+            "answer": "Yes, all part-time students will pay credit fees."
+        },
+        {
+            "question": [
+                "Is there an exception to the 9-credit threshold for part-time classification?",
+                "Can a student be considered part-time with more than 9 credits?",
+                "Under what circumstances can a student with more than 9 credits be part-time?"
+            ],
+            "answer": "Unless otherwise approved by the department concerned"
+        },
+        {
+            "question": [
+                "Can mixed-mode students choose between full-time and part-time study loads?",
+                "What study loads are available for mixed-mode students?",
+                "Is there flexibility in the study load for mixed-mode students?"
+            ],
+            "answer": "They may take up a full-time or part-time study load."
+        },
+        {
+            "question": [
+                "When can mixed-mode students attend classes?",
+                "What are the possible class attendance times for mixed-mode students?",
+                "Is there a specific time for classes for mixed-mode students?"
+            ],
+            "answer": "In the daytime, in the evening, or a combination of both."
+        },
+        {
+            "question": [
+                "Where can the class attendance pattern for mixed-mode programs be found?",
+                "Is the class attendance pattern specified for mixed-mode students?",
+                "In what documents are the details of class attendance specified for mixed-mode programs?"
+            ],
+            "answer": "In the admission/programme documents."
+        },
+        {
+            "question": [
+                "When will mixed-mode students be given full-time status in a semester?",
+                "Under what condition will mixed-mode students be considered full-time?",
+                "What study load qualifies mixed-mode students for full-time status?"
+            ],
+            "answer": "If they take subjects with a study load reaching the minimum requirement of a full-time student (i.e., 9 credits)."
+        },
+        {
+            "question": [
+                "In what situations will mixed-mode students be given part-time status?",
+                "Under what circumstances do mixed-mode students have part-time status?",
+                "When will mixed-mode students be considered part-time?"
+            ],
+            "answer": "Otherwise, they will be given part-time status unless approved otherwise by the department concerned to retain a full-time status."
+        },
+        {
+            "question": [
+                "What do self-paced students need to do if they want to study at their own pace?",
+                "How can I study at my own pace instead of following the specified progression pattern?",
+                "What is the process for becoming a self-paced student?"
+            ],
+            "answer": "Self-paced students need to seek approval from the department by completing Form AR114 before the commencement of the semester concerned."
+        },
+        {
+            "question": [
+                "Who are considered self-paced students?",
+                "When can I become a self-paced student?",
+                "What qualifies someone to be a self-paced student?"
+            ],
+            "answer": "Self-paced students are those who have been given approval by their department not to follow the specified progression pattern or those registered on programs which do not have any specified progression patterns."
+        },
+        {
+            "question": [
+                "How long will I remain a self-paced student once approved?",
+                "Is there a time limit for being a self-paced student?",
+                "What is the duration of being a self-paced student?"
+            ],
+            "answer": "Once you are approved to become self-paced, you will remain as a self-paced student throughout your entire study."
+        },
+        {
+            "question": [
+                "What should I do as a self-paced student?",
+                "How should I approach studying as a self-paced student?",
+                "What is the responsibility of a self-paced student?"
+            ],
+            "answer": "Self-paced students should study the programme requirements carefully, consult the departmental academic advisors, and perform subject registration according to the schedule announced by the Academic Registry."
+        },
+        {
+            "question": [
+                "What is emphasized for self-paced students?",
+                "What is expected of self-paced students regarding their progress?",
+                "What is the key responsibility of self-paced students?"
+            ],
+            "answer": "It is your responsibility to monitor your progress of study and to ensure that the programme requirements are completed within the maximum period of registration (for students admitted in or before 2019/20)/normal duration (for students admitted in or after 2020/21) of your programme."
+        },
+        {
+            "question": [
+                "What is a graduand?",
+                "Define graduand.",
+                "Who are classified as graduands?"
+            ],
+            "answer": "For those who have satisfied all the academic requirements but have not been conferred the academic awards, they are classified as Graduands."
+        },
+        {
+            "question": [
+                "What do graduands need to comply with?",
+                "Until when do graduands need to comply with the Rules and Regulations of a student?"
+            ],
+            "answer": "Graduands need to comply with the Rules and Regulations of a student until they have graduated."
+        },
+        {
+            "question": [
+                "What is the procedure for discontinuing study at the University?",
+                "How can I discontinue my study at the University?"
+            ],
+            "answer": "If you wish to discontinue your study at the University before completing your programme, it is necessary for you to complete the withdrawal procedure via eStudent."
+        },
+        {
+            "question": [
+                "Will fees be refunded if I withdraw during the semester?",
+                "What happens to fees paid for the semester if I withdraw?"
+            ],
+            "answer": "Fees paid for the semester in which you are studying will not be refunded."
+        },
+        {
+            "question": [
+                "When should applications for withdrawal be submitted for the current semester?",
+                "Is there a deadline for submitting applications for withdrawal for the current semester?"
+            ],
+            "answer": "Applications for withdrawal of study for the current semester must be submitted before the commencement of the examination period."
+        },
+        {
+            "question": [
+                "What happens if I submit an application for withdrawal after the commencement of the examination period?",
+                "Will late applications for withdrawal be processed?"
+            ],
+            "answer": "Applications submitted after the commencement of the examination period will not be processed."
+        },
+        {
+            "question": [
+                "When should applications for withdrawal for the following academic year/semester be submitted?",
+                "Is there a deadline for submitting applications for withdrawal for the next academic year/semester?"
+            ],
+            "answer": "Applications for withdrawal of study for the following academic year/semester should be submitted before the commencement of that academic year/semester."
+        },
+        {
+            "question": [
+                "What outstanding matters might hinder the processing of your application?",
+                "List some outstanding matters that need to be cleared for application processing."
+            ],
+            "answer": "Your application will not be processed if you have not cleared outstanding matters with the various departments/offices concerned, such as settling outstanding fees/fines and Library loans and clearing your locker provided by the Student Affairs Office."
+        },
+        {
+            "question": [
+                "How will you be informed of the result of your application?",
+                "Within what timeframe will you typically receive information about your application result?"
+            ],
+            "answer": "The relevant department will inform you in writing or via email of the result of your application, normally within three weeks after you have cleared all the outstanding items as mentioned above."
+        },
+        {
+            "question": [
+                "What is the eligibility criterion for a refund of caution money upon official withdrawal?",
+                "Under what condition will you be eligible for the refund of caution money?"
+            ],
+            "answer": "Upon confirmation of your official withdrawal, you will be eligible for the refund of the caution money paid if you have no outstanding debts to the University."
+        },
+        {
+            "question": [
+                "Are all fees paid refundable?",
+                "Under what circumstances are fees non-refundable?"
+            ],
+            "answer": "All fees paid are non-refundable and non-transferable."
+        },
+        {
+            "question": [
+                "Who is eligible for a refund of tuition fee for a semester before the commencement?",
+                "What is the condition for refund eligibility for new students enrolled in UGC-funded programmes?"
+            ],
+            "answer": "New students enrolled on UGC-funded programmes who apply for withdrawal of study before the commencement of the relevant semester will be eligible for a refund of the tuition fee paid for that semester after deducting an initial fee."
+        },
+        {
+            "question": [
+                "What happens if you discontinue your study without completing proper withdrawal procedures?",
+                "How will discontinuing study without proper withdrawal procedures affect the caution money paid at first registration?"
+            ],
+            "answer": "If you discontinue your study at the University without completing proper withdrawal procedures, you will be regarded as having unofficially withdrawn and the caution money paid at first registration will be confiscated."
+        },
+        {
+            "question": [
+                "What happens if you discontinue your study without following proper procedures?",
+                "How is discontinuation of study without official withdrawal treated?"
+            ],
+            "answer": "If you discontinue your study without following the proper procedures for official withdrawal, you will be regarded as having given up your study at the University."
+        },
+        {
+            "question": [
+                "What are the consequences of discontinuing study without proper procedures?",
+                "Will you be eligible for a refund if you discontinue without following the proper procedures?"
+            ],
+            "answer": "In this case, you will not be eligible for the refund of caution money."
+        },
+        {
+            "question": [
+                "Can you be considered for re-admission if you discontinue without proper procedures?",
+                "What is the status for re-admission after discontinuation without official withdrawal?"
+            ],
+            "answer": "You shall not be considered for re-admission to the same scheme/programme/stream (sub-code) in the following academic year."
+        },
+        {
+            "question": [
+                "What happens if I get de-registered due to academic failure?",
+                "Can I be considered for re-admission if I've been de-registered for academic reasons?",
+                "Is re-admission possible after being de-registered due to academic failure?"
+            ],
+            "answer": "Students who have been de-registered on grounds of academic failure shall not be considered for re-admission to the same scheme/programme/stream (sub-code) in the following academic year."
+        },
+        {
+            "question": [
+                "How can I apply for a Minor?",
+                "When should I submit my application for a Minor?",
+                "What are the eligibility criteria for enrolling in a Minor?",
+                "Can I apply for a Minor in the senior year of my program?"
+            ],
+            "answer": "Students interested in a Minor must submit their application via the Major-offering department and obtain approval from the Minor-offering department, at the start of the second year of study during the designated application period. No late applications will be considered. To be eligible for enrolment in a Minor, a student must have a cumulative GPA of 2.5 or above at the time of application for Minor enrolment. The Minor-offering department may set a quota and additional admission requirements apart from the above GPA requirement. Students admitted to the advanced stage of a programme on senior year status and those admitted to an articulation degree programme will not be given the option to study for a Minor. For students who are admitted on the basis of advanced standing, the programme offering department will decide whether they will be given the option to study a Minor at the time of admission, based on individual merits."
+        },
+        {
+            "question": [
+                "What is the process for students who want to withdraw from a Minor?",
+                "How can students withdraw from a Minor?",
+                "When should students seek approval to withdraw from a Minor?"
+            ],
+            "answer": "Students who wish to withdraw from a Minor need to seek approval from the Minor-offering department, prior to the end of the add/drop period of the last semester of study."
+        },
+        {
+            "question": [
+                "Where can students find the list of Minors?",
+                "What is the path to access the list of Minors?",
+                "Can you guide me on where to find information about Minors?"
+            ],
+            "answer": "Students can refer to the list of Minors at AR Website > Students in Taught Programmes > Registration Information > Double Major/Minor Study/List of Minors."
+        },
+        {
+            "question": [
+                "How many credits can be transferred for a Minor from institutions outside the university?",
+                "What is the limit for credit transfer from approved institutions outside the university for a Minor?",
+                "Can you tell me the maximum number of credits that can be transferred for a Minor from external institutions?"
+            ],
+            "answer": "Credit transfer can be given for not more than 9 credits of a Minor programme if the previous credits were earned from approved institutions outside of the university."
+        },
+        {
+            "question": [
+                "How many credits of a Minor programme can be transferred if earned from PolyU programmes?",
+                "What is the credit transfer limit for a Minor if the previous credits were earned from PolyU programmes?",
+                "Can you provide information on credit transfer for a Minor from PolyU programmes?"
+            ],
+            "answer": "Credit transfer can be given for not more than 12 credits of a Minor programme if the previous credits were earned from programmes offered by PolyU."
+        },
+        {
+            "question": [
+                "When should students apply for graduation?",
+                "At what point should students submit their graduation application?",
+                "What is the recommended time for students to apply for graduation?"
+            ],
+            "answer": "Students concerned are required to apply for graduation to enable calculation of a proper GPA for award classification determination, in the semester in which they are expected to fulfil all their graduation requirements, and after the add/drop period for that semester."
+        },
+        {
+            "question": [
+                "What happens if a student is confirmed eligible to graduate or leaves the University?",
+                "Can you explain the consequences if a student is confirmed eligible to graduate or leaves the University?",
+                "What occurs when a student is confirmed eligible to graduate or decides to leave the University?"
+            ],
+            "answer": "Upon confirmation of eligibility to graduate or leaving the University, registration on subjects (including the follow-on term of consecutive subjects) in the following semester/Summer Term will be nullified and removed."
+        },
+        {
+            "question": [
+                "What is the typical duration for completing a Double Major program?",
+                "How long does it usually take to finish a Double Major?",
+                "Is there a standard timeframe for completing a Double Major?"
+            ],
+            "answer": "Students intending to complete a Double Major typically require a longer normal duration for completion of the programme (i.e. beyond four/five years)."
+        },
+        {
+            "question": [
+                "What additional requirement do students pursuing a Double Major have?",
+                "Are there any extra credits needed for a Double Major?",
+                "Do Double Major students need to fulfill any special credit requirements?"
+            ],
+            "answer": "Students intending to complete a Double Major typically require a longer normal duration for completion of the programme and to take extra credits on a self-financed basis (i.e. higher tuition fee)."
+        },
+        {
+            "question": [
+                "What determines the number of credits needed for a Double Major?",
+                "How is the credit requirement for a Double Major determined?",
+                "Is there a fixed number of credits for a Double Major?"
+            ],
+            "answer": "The actual number of credits required for getting a Double Major depends on the level of commonality between the two Majors."
+        },
+        {
+            "question": [
+                "When can students interested in a Second Major submit their applications?",
+                "At what point in their studies can students apply for a Second Major?",
+                "Is there a specific time when students can apply for a Second Major?"
+            ],
+            "answer": "Students interested in taking a Second Major should first obtain approval from the host department of the First Major. They can then submit their applications to the host department of the Second Major from their second year of study."
+        },
+        {
+            "question": [
+                "What is the GPA requirement for consideration in Second Major study enrollment?",
+                "Is there a minimum GPA required for Second Major study?",
+                "Who is eligible for Second Major study enrollment?"
+            ],
+            "answer": "Only students with a cumulative GPA of 3.0 or above can be considered for Second Major study enrollment. Departments can, however, stipulate a higher GPA requirement for entry to the Second Major."
+        },
+        {
+            "question": [
+                "What is expected of students once they are enrolled in a Second Major?",
+                "What do students need to do after being accepted into a Second Major?",
+                "Are there any obligations for students in a Second Major?"
+            ],
+            "answer": "Once enrolled, students are expected to complete the Second Major as part of their graduation requirements."
+        },
+        {
+            "question": [
+                "How can students withdraw from a Second Major?",
+                "What is the process for officially withdrawing from a Second Major?",
+                "Are there any formalities for withdrawing from a Second Major?"
+            ],
+            "answer": "Students who wish to withdraw from a Second Major need to apply for approval officially from the host department of the Second Major before the end of the add/drop period of the last semester of study."
+        },
+        {
+            "question": [
+                "How can I apply for a Secondary Major?",
+                "What is the designated application period for a Secondary Major?",
+                "When can I submit a late application for a Secondary Major?"
+            ],
+            "answer": "Students admitted in or after 2022/23 interested in a Secondary Major should submit their application and obtain approval from the Major-offering department during the designated application period. Late applications submitted before the commencement of the second year of study will be considered case-by-case."
+        },
+        {
+            "question": [
+                "Who is eligible for consideration for Secondary Major enrollment?",
+                "What GPA is required for Secondary Major enrollment?",
+                "Can I be considered for Secondary Major enrollment if my GPA is below 2.70?"
+            ],
+            "answer": "Only students with a Cumulative GPA of 2.70 or above after Semester Two of Year One may be considered for Secondary Major enrollment. Students with a GPA below 2.70 will not be considered."
+        },
+        {
+            "question": [
+                "Is it possible to have more than one Secondary Major?",
+                "Can I take both a Major and a Secondary Major?",
+                "What is the limit on the number of Secondary Majors a student can have?"
+            ],
+            "answer": "Each student may take not more than one Secondary Major. If deemed appropriate by the Major-offering department, students are allowed to take a Major with a Secondary Major and a Minor."
+        },
+        {
+            "question": [
+                "What additional criteria may the Secondary Major-offering department stipulate for admission?",
+                "Are there any specific requirements set by the Secondary Major department for admission?",
+                "Can the Secondary Major department set additional criteria for enrollment?"
+            ],
+            "answer": "The Secondary Major-offering department may stipulate additional selection criteria for admission."
+        },
+        {
+            "question": [
+                "What is the eligibility for studying a Secondary Major?",
+                "Are there any exceptions to studying a Secondary Major?",
+                "Who decides if students admitted on senior year status can pursue a Secondary Major?"
+            ],
+            "answer": "Students admitted to the advanced stage of a programme on senior year status and those admitted to an articulation degree programme will normally not be given the option to study for a Secondary Major. For students who are admitted on the basis of advanced standing, the programme offering department will decide whether they will be given the option to study a Secondary Major at the time of admission, based on individual merits."
+        },
+        {
+            "question": [
+                "What is the expectation for students enrolled in a Secondary Major?",
+                "Is there a time limit for completing Major and Secondary Major studies?",
+                "What if a student wants to withdraw from a Secondary Major?"
+            ],
+            "answer": "Students who have enrolled in a Secondary Major are expected to complete their Major and Secondary Major studies within the normal duration of the Major programme. Students who wish to withdraw from a Secondary Major need to seek approval from the Major-offering department, prior to the end of the add/drop period of the last semester of study."
+        },
+        {
+            "question": [
+                "What should I check to ensure my subject registration fulfills the graduation requirements?",
+                "What is my responsibility regarding subject registration and graduation requirements?",
+                "Where can I find information about subject prerequisites and progression patterns for my program?"
+            ],
+            "answer": "It is your responsibility to check if your subject registration will fulfill the graduation requirements. You should study the Programme Requirement Document, the subject prerequisite, co-requisite and exclusion requirements and the specified progression pattern, if any, of your programme before subject registration."
+        },
+        {
+            "question": [
+                "What is the specified progression pattern?",
+                "How can I complete the program within the normal duration?",
+                "Why is it important to follow the specified progression pattern?"
+            ],
+            "answer": "The specified progression pattern is the sequence of subject selections recommended by your department. By following this sequence, you can complete the programme within the normal duration."
+        },
+        {
+            "question": [
+                "What should I do if I wish to deviate from the specified progression pattern?",
+                "How can I change my status to 'self-paced' in subject registration?",
+                "Is there a process for seeking approval to deviate from the specified progression pattern?"
+            ],
+            "answer": "If you wish to deviate from the specified progression pattern, you need to seek approval from your department to change your status to 'self-paced' by completing Form AR114."
+        },
+        {
+            "question": [
+                "What is the normal study load in a semester?",
+                "How many credits can a student take in a semester?",
+                "What is the maximum study load in a semester without departmental approval?"
+            ],
+            "answer": "The normal study load is 15 credits in a semester. The University has a limit on the maximum study load that a student can take in a semester, which is 21 credits, unless the subjects have been pre-assigned by the department or exceptional approval is given by the Head of the programme offering department."
+        },
+        {
+            "question": [
+                "How are students classified if the programme does not have a specified progression pattern?",
+                "What is the classification for self-paced students?",
+                "Who are considered self-paced students?"
+            ],
+            "answer": "Students enrolled in programmes without specified progression patterns will be classified as self-paced students."
+        },
+        {
+            "question": [
+                "What is the requirement for self-paced students regarding program completion?",
+                "How should self-paced students plan their study?",
+                "What is the maximum period of registration for self-paced students admitted in or before 2019/20?"
+            ],
+            "answer": "Self-paced students need to plan their own study and complete the programme requirements within the maximum period of registration (for students admitted in or before 2019/20)/normal duration (for students admitted in or after 2020/21) of the programme."
+        },
+        {
+            "question": [
+                "What should students on academic probation do to ensure academic performance?",
+                "Who should students on academic probation consult regarding study loads?",
+                "What is the recommended study load for students on academic probation?"
+            ],
+            "answer": "To ensure academic performance, students on academic probation are required to seek academic advice on their study loads and subjects to be taken. These students will normally be required to take a study load of not more than 15 credits (for details, please refer to section 6C on “Academic Probation”)."
+        },
+        {
+            "question": [
+                "What subjects can I select on a semester basis?",
+                "How can I choose subjects each semester?",
+                "In which system can I register for subjects each semester?"
+            ],
+            "answer": "You can select other subjects on a semester basis through the online subject registration system via eStudent according to the schedule announced by the Academic Registry."
+        },
+        {
+            "question": [
+                "Should I make changes to subjects assigned to me by departments?",
+                "Is it advisable to modify the subjects pre-assigned by departments without consultation?",
+                "What should I do if I want to make changes to the subjects pre-assigned by my department?"
+            ],
+            "answer": "You are not advised to make any changes to subjects assigned to you by departments without consulting your department/Academic Advisor."
+        },
+        {
+            "question": [
+                "Do I need approval to drop subjects pre-assigned by my department?",
+                "What is the process for dropping subjects pre-assigned by the department?",
+                "Should I obtain approval to drop subjects pre-assigned by my department?"
+            ],
+            "answer": "Students enrolled on undergraduate degree programmes and Higher Diploma programmes need to obtain prior approval from their Departments should they have genuine needs to drop subjects pre-assigned/assigned by their Departments."
+        },
+        {
+            "question": [
+                "When can I select General University Requirements (GUR) subjects?",
+                "Is there a specific semester for choosing GUR subjects?",
+                "Can I choose GUR subjects at any time before graduation?"
+            ],
+            "answer": "Students can select General University Requirements (GUR) subjects in any semester before graduation unless otherwise specified in the Programme Requirement Document."
+        },
+        {
+            "question": [
+                "How are work-integrated studies arranged?",
+                "Who arranges the work-integrated studies?",
+                "Where can I find details about work-integrated studies arrangements?"
+            ],
+            "answer": "The work-integrated studies are arranged either by Departments or the Student Affairs Office (SAO). Details are set out in the Programme Requirement Document."
+        },
+        {
+            "question": [
+                "What happens if I fail to complete subject registration according to schedule and haven't applied for deferment or zero subject enrolment?",
+                "What are the consequences if subject registration is not completed according to schedule and deferment or zero subject enrolment is not applied?",
+                "What happens if I miss the subject registration deadline and don't apply for deferment or zero subject enrolment?"
+            ],
+            "answer": "Students who fail to complete subject registration according to schedule and have not applied for deferment or zero subject enrolment will be subject to the removal of their registration and student status with the University (for details, please refer to sections 4H & 4I on “Deferment of Study” and “Zero Subject Enrolment”)."
+        },
+        {
+            "question": [
+                "When is the class timetable usually released for Semester One?",
+                "When can I expect the release of the class timetable for Semester Two?",
+                "What is the usual release timeframe for the class timetable for Summer Term?"
+            ],
+            "answer": "The class timetable will normally be released around late July for Semester One, around mid-December for Semester Two, and around late February for Summer Term via eStudent to facilitate relevant subject registration of students."
+        },
+        {
+            "question": [
+                "Who has the final authority to decide on the subject selection of students?",
+                "Which department has the authority to decide on the subject selection of its students?",
+                "Who determines the subject selection for students?"
+            ],
+            "answer": "The programme offering department has the final authority to decide on the subject selection of its students."
+        },
+        {
+            "question": [
+                "Under what circumstances can a department cancel the offering of a subject?",
+                "What gives a department the right to cancel the offering of a subject?",
+                "In what situations can a department decide to cancel the offering of a subject?"
+            ],
+            "answer": "Departments also have the right to cancel the offering of a subject if the class enrolment is too small. You will be advised to take other replacement subjects/classes in case of cancellation."
+        },
+        {
+            "question": [
+                "When are students required to graduate?",
+                "What is the expectation regarding graduation for students?",
+                "When should students aim to graduate?"
+            ],
+            "answer": "Students are required to graduate as soon as they satisfy the graduation requirement."
+        },
+        {
+            "question": [
+                "What happens upon confirmation of eligibility to graduate or leaving the University?",
+                "What happens to subject registration upon confirmation of eligibility to graduate or leaving the University?",
+                "What is the procedure for subject registration after confirmation of eligibility to graduate or leaving the University?"
+            ],
+            "answer": "Upon confirmation of eligibility to graduate or leaving the University, registration for subjects (including the follow-on term of consecutive subjects) in the following semester/Summer Term will be nullified and removed from record."
+        },
+        {
+            "question": [
+                "What is the minimum credit requirement for eligibility for a PolyU award?",
+                "How much of the normal credit requirement should students complete to be eligible for a PolyU award?"
+            ],
+            "answer": "All students should complete at least one third of the normal credit requirement to be eligible for a PolyU award."
+        },
+        {
+            "question": [
+                "What can I do if I believe my previous study is relevant to my current programme?",
+                "Is there a process for getting credit for my previous study in my current programme?"
+            ],
+            "answer": "If you consider your previous study is relevant to your current programme, you may apply for subject exemption or credit transfer."
+        },
+        {
+            "question": [
+                "What should I do if I want to be exempted from certain subjects?",
+                "How can I avoid taking specific subjects in my program?",
+                "Is there a way to skip certain subjects in my program?"
+            ],
+            "answer": "You may be granted exemption from taking certain subjects if you have successfully completed similar subjects in another programme."
+        },
+        {
+            "question": [
+                "Are the credits from the exempted subject counted towards my program's credit requirements?",
+                "Do the credits from the exempted subject contribute to my overall credit count?",
+                "Will the credits from the exempted subject satisfy the credit requirements of my program?"
+            ],
+            "answer": "The credits associated with the exempted subject will not be counted for satisfying the credit requirements of your programme."
+        },
+        {
+            "question": [
+                "Who should I consult regarding subject exemptions?",
+                "Where can I get information about exempting subjects in my program?",
+                "Is there someone specific I should talk to about subject exemptions?"
+            ],
+            "answer": "You should consult your department for guidance on subject exemptions."
+        },
+        {
+            "question": [
+                "What should I do after being granted exemption for a subject?",
+                "How can I replace an exempted subject in my program?",
+                "Is there a process for substituting an exempted subject with another?"
+            ],
+            "answer": "You should consult your department and take another subject in place of the exempted one."
+        },
+        {
+            "question": [
+                "When should I submit an application for credit transfer?",
+                "At what point in my enrollment should I apply for credit transfer?",
+                "Is there a specific time frame for submitting a credit transfer application?"
+            ],
+            "answer": "You should submit an application for credit transfer upon your initial enrollment in the program or before the end of the add/drop period of the first semester of your first year of study."
+        },
+        {
+            "question": [
+                "What happens if I submit a credit transfer application late?",
+                "Will my late credit transfer application be considered?",
+                "Is there a deadline for credit transfer applications?"
+            ],
+            "answer": "Late applications may not be considered."
+        },
+        {
+            "question": [
+                "Is there a fee for credit transfer?",
+                "Do I need to pay for a credit transfer application?",
+                "Are there any charges associated with credit transfers?"
+            ],
+            "answer": "For students whose tuition fees are charged by credits, a credit transfer fee will be charged."
+        },
+        {
+            "question": [
+                "How long is the validity period for subject credits?",
+                "What is the time limit for using earned subject credits?",
+                "When do subject credits expire?"
+            ],
+            "answer": "The validity period of subject credits earned is eight years from the year of attainment unless otherwise specified by the Department responsible for the content of the subject."
+        },
+        {
+            "question": [
+                "When do credits earned from previous studies become invalid?",
+                "Is there a specific time when credits from previous studies expire?",
+                "Do credits earned in previous studies have a validity period?"
+            ],
+            "answer": "Credits earned from previous studies should remain valid at the time when the student applies for the transfer of credits."
+        },
+        {
+            "question": [
+                "What is the maximum limit for credit transfer if the credits are from PolyU?",
+                "How many credits can be transferred if they are from PolyU?",
+                "Is there a limit to the credits transferred from PolyU?"
+            ],
+            "answer": "The total credits transferred from PolyU should not exceed 67% of the required credits for the award."
+        },
+        {
+            "question": [
+                "What is the limit on transferred credits if they are from other institutions?",
+                "Can you exceed 50% of required credits when transferring from other institutions?",
+                "How many credits can be transferred if gained from other institutions?"
+            ],
+            "answer": "The total credits transferred from other institutions should not exceed 50% of the required credits for the award."
+        },
+        {
+            "question": [
+                "If both PolyU and other institutions' credits are transferred, what is the limit?",
+                "Can you transfer more than 50% of required credits if both types are transferred?",
+                "What is the maximum percentage of credits allowed if both PolyU and other institutions' credits are transferred?"
+            ],
+            "answer": "In case both types of credits are transferred, not more than 50% of the required number of credits for the academic award may be transferred."
+        },
+        {
+            "question": [
+                "Are grades given for transferred credits?",
+                "Do transferred credits receive grades?",
+                "Is there a grading system for transferred credits?"
+            ],
+            "answer": "Grades may or may not be given for the transferred credits."
+        },
+        {
+            "question": [
+                "Do transferred credits count towards satisfying award requirements?",
+                "Are transferred credits considered for meeting award requirements?",
+                "Is there any contribution of transferred credits to meeting award requirements?"
+            ],
+            "answer": "All credits transferred will be counted for satisfying the award requirements."
+        },
+        {
+            "question": [
+                "Can transferred credits be used for more than one degree?",
+                "Do transferred credits count for multiple degrees?",
+                "Is there a restriction on using transferred credits for multiple degrees?"
+            ],
+            "answer": "Transferred credits are normally not counted for meeting the requirements of more than one degree."
+        },
+        {
+            "question": [
+                "What happens if you have an advanced qualification relevant to the program?",
+                "Can you take fewer credits if you have an advanced qualification?",
+                "Is there any flexibility in the credit requirements for those with advanced qualifications?"
+            ],
+            "answer": "If you have an advanced qualification relevant to the program, you may be allowed to take fewer credits than what the program normally requires."
+        },
+        {
+            "question": [
+                "Are the credits not required to study counted in credit transfer?",
+                "Do credits not required to study contribute to credit transfer?",
+                "Is there any impact on credit transfer if some credits are not required to study?"
+            ],
+            "answer": "When you apply for credit transfer, the credits that you are not required to study will also be counted towards the maximum number of transferred credits."
+        },
+        {
+            "question": [
+                "What is the maximum entry credit transfer for UGC-funded degree programs?",
+                "How many credits can be transferred for UGC-funded degree programs?",
+                "Is there a limit on entry credit transfer for UGC-funded degree programs?"
+            ],
+            "answer": "Students admitted to a UGC-funded degree program will normally be given entry credit transfer up to a maximum of 25% of the credit requirement for a degree program."
+        },
+        {
+            "question": [
+                "What is the maximum percentage of credit transfer allowed for UGC-funded degree programme students?",
+                "How much credit transfer can students admitted to a UGC-funded degree programme receive?",
+                "Is there a limit to the credit transfer for UGC-funded degree programme students?"
+            ],
+            "answer": "up to a maximum of 25% of the credit requirement for a degree programme."
+        },
+        {
+            "question": [
+                "Do students in Articulation Degree or Senior Year curriculum receive credit transfer for GUR subjects?",
+                "How does credit transfer work for students in Articulation Degree or Senior Year curriculum?",
+                "Are Articulation Degree or Senior Year curriculum students eligible for credit transfer in required GUR subjects?"
+            ],
+            "answer": "they will not be given credit transfer for any required GUR subjects, and are required to complete at least 60 credits in order to be eligible for a Bachelor’s award."
+        },
+        {
+            "question": [
+                "What should students do when applying for credit transfer of retaken subjects?",
+                "How is the grade considered for credit transfer of retaken subjects?",
+                "Is there a specific rule for credit transfer of retaken subjects with a carried-over grade?"
+            ],
+            "answer": "the grade attained in the last attempt should be taken."
+        },
+        {
+            "question": [
+                "Are students required to declare anything when applying for credit transfer for subjects taken in other institutions?",
+                "What is the declaration requirement for credit transfer of subjects from other institutions?",
+                "Is there any specific requirement for students applying for credit transfer from other institutions?"
+            ],
+            "answer": "Students applying for credit transfer for a subject taken in other institutions are required to declare that the subject grade used for claiming credit transfer was attained in the last attempt of the subject in their previous studies."
+        },
+        {
+            "question": [
+                "What happens if a student fails in the last attempt of a retaken subject?",
+                "Is credit transfer granted if a student fails in the last attempt of a retaken subject?",
+                "Does failing in the last attempt of a retaken subject affect credit transfer?"
+            ],
+            "answer": "If a student fails in the last attempt of a retaken subject, no credit transfer should be granted, despite the fact that the student may have attained a pass grade for the subject in the earlier attempts."
+        },
+        {
+            "question": [
+                "What happens if a student attempts and fails a subject in their current study?",
+                "Is credit transfer allowed for subjects attempted and failed in the current study?",
+                "Under what circumstances will students not be granted credit transfer for a subject they failed in their current study?"
+            ],
+            "answer": "Students will not be granted credit transfer for a subject which they have attempted and failed in their current study unless the subject was taken by the student as an exchange-out student in his/her current programme."
+        },
+        {
+            "question": [
+                "How can credits be earned through studying during outbound exchange?",
+                "What is the process for earning credits during outbound exchange?",
+                "Can studying during outbound exchange contribute to earning credits?"
+            ],
+            "answer": "You can also earn credits through studying during your outbound exchange."
+        },
+        {
+            "question": [
+                "What should I do before deciding on subjects for an exchange institution?",
+                "Is there a step I should take before selecting subjects for an exchange institution?",
+                "How can I ensure credit transfer for subjects at the exchange institution?"
+            ],
+            "answer": "Before you decide on which subjects to take at the exchange institution, you should seek provisional approval from your programme offering department on the study plan and the possibility of credit transfer for fulfilling the award requirement of your programme by completing Form AR41a."
+        },
+        {
+            "question": [
+                "What is the procedure after successfully completing an exchange programme/activity?",
+                "How can I apply for credit transfer after completing an exchange programme?",
+                "Is there a formal application process for credit transfer after an exchange programme?"
+            ],
+            "answer": "Upon successful completion of the exchange programme/activity, you need to submit a formal application for credit transfer via eStudent (Form AR41c)."
+        },
+        {
+            "question": [
+                "Is there a limit to the percentage of total credits transferred for students who received transferred credits from an approved exchange programme?",
+                "Can students who received transferred credits from an exchange programme exceed a certain credit limit?",
+                "What is the maximum percentage of total credits transferable for students with credits from an approved exchange programme?"
+            ],
+            "answer": "Students who received transferred credits from an approved exchange programme can exceed the 50% limit of total credits transferred."
+        },
+        {
+            "question": [
+                "How can I seek approval for exemption or credit transfer for language subjects?",
+                "What is the process for obtaining exemption or credit transfer for language subjects?",
+                "Is it possible to get exemption from compulsory language subjects?",
+                "Are there any conditions for seeking exemption from compulsory language subjects?"
+            ],
+            "answer": "You may also seek approval from your department for exemption or credit transfer for language subjects attained in previous study."
+        },
+        {
+            "question": [
+                "What steps should I take if I want exemption from compulsory language subjects?",
+                "Is there a test for exemption or credit transfer for compulsory language subjects?",
+                "How can I demonstrate my proficiency for exemption from language subjects?"
+            ],
+            "answer": "Students seeking exemption or credit transfer for compulsory language subjects may be required to take a suitable test to demonstrate their level of proficiency."
+        },
+        {
+            "question": [
+                "When will credit transfers approved for extenuating circumstances take effect?",
+                "Is there a specific time for the approval of credit transfers in extenuating circumstances?",
+                "What is the graduation eligibility for students with extenuating circumstances and credit transfers?"
+            ],
+            "answer": "All credit transfers approved for extenuating circumstances will take effect only in the semester for which they are approved. Such students will only be eligible for graduation at the end of that semester."
+        },
+        {
+            "question": [
+                "What should I do if I have failed a subject?",
+                "How can I check if I have failed any subject?",
+                "Where can I find information about my subject results?",
+                "What is the maximum study load per semester?",
+                "How many times can I retake a subject?",
+                "What happens if I fail a compulsory subject after two retakes?",
+                "Are there any additional regulations for retaking certain types of subjects?",
+                "How do I retake a failed subject for the first time?",
+                "What should I do for the second retake of a failed subject?",
+                "Which form should I complete for the second retake, and where should I submit it?"
+            ],
+            "answer": "Students may only retake a subject which they have failed (i.e. Grade F or S or U). After the announcement of subject results in a semester, you should check whether you have failed any subject via eStudent (please refer to section 6G on “Assessment Results”) and arrange for retaking of the subject during subject registration. Retaking of subjects is with the condition that the maximum study load of 21 credits per semester is not exceeded. The number of retakes of each subject is restricted to a maximum of two. The second retake of a failed subject requires the approval of the Faculty/School Board. Students who have failed a compulsory subject after two retakes will be de-registered. Departments may impose more stringent regulations on the retaking of particular types of subjects, e.g. practicum and clinical placement, and should inform students of such cases, if any. Students can retake a failed subject the first time via eStudent directly during the subject registration period and add/drop period. For a second retake of a failed subject, students should complete form AR160 instead and return it to the programme offering departments to seek approval."
+        },
+        {
+            "question": [
+                "What happens when I retake a failed subject?",
+                "How is the GPA calculated when retaking a failed subject?",
+                "Tell me about the inclusion of grades in GPA for retaken subjects."
+            ],
+            "answer": "When you retake a failed subject, only the grade obtained in the final attempt of the retake will be included in the calculation of Grade Point Average (GPA) and GPA for award classification."
+        },
+        {
+            "question": [
+                "Will the original grade be considered in GPA calculations when I retake a subject?",
+                "Is the original grade included in the GPA for retaken subjects?",
+                "What happens to the original grade in GPA calculations when retaking a failed subject?"
+            ],
+            "answer": "Although the original grade will not be included in the calculation of GPAs, it will be shown in the Transcript of Studies."
+        },
+        {
+            "question": [
+                "Where can I find information about retaking failed subjects?",
+                "How can I know the requirements for retaking failed subjects?",
+                "What should I refer to for information on retaking failed subjects?"
+            ],
+            "answer": "You should refer to the Programme Requirement Document to ascertain the requirements, in particular for subjects offered in consecutive semesters, for retaking failed subjects, or seek advice from the Department concerned."
+        },
+        {
+            "question": [
+                "Do I need to pay for retaking failed subjects?",
+                "Are there any charges for retaking subjects?",
+                "What is the policy for students paying credit fee when retaking subjects?"
+            ],
+            "answer": "Students paying credit fee will be charged for the subjects retaken."
+        },
+        {
+            "question": [
+                "What should I do if I fail a subject that is a prerequisite for the next semester's follow-on subjects?",
+                "How can I check if I have any unqualified subjects?",
+                "Where can I find information about unqualified subjects after the finalization of the semester subject results?"
+            ],
+            "answer": "Upon the finalization of the semester subject results, if you have failed a subject which is a pre-requisite of the follow-on subject(s) in the next semester, the follow-on subject(s) which you enrolled earlier will be removed from your subject registration record, and you will not be qualified for attending classes of these subject(s). You are advised to check the unqualified subjects records, if any, via eStudent [http://www.polyu.edu.hk/student > My Subject Registration > Subject Registration History > Unqualified Subject(s)] to find out whether you have any unqualified subjects after the finalization of subject result of the last semester."
+        },
+        {
+            "question": [
+                "How will I know if I have been waived from the pre-requisite requirement for unqualified subjects?",
+                "What should I do if my department doesn't grant me a waiver for the pre-requisite requirement but I still want to take the unqualified subject?",
+                "Is there a deadline for taking action regarding unqualified subjects after the finalization of subject results?"
+            ],
+            "answer": "Normally, your program offering department will inform you if you have been waived from the pre-requisite requirement and are allowed to take the unqualified subject. However, in case the department concerned does not grant you the waiver but you still wish to take the unqualified subject, you should approach your department to seek special approval. Alternatively, you can take other subjects in place of the 'unqualified subjects.' You should complete these actions before the end of the add/drop period of the semester concerned."
+        },
+        {
+            "question": [
+                "How can I make changes to my subject registration?",
+                "Where can I modify my subject registration?",
+                "What is the process for adjusting my subjects?"
+            ],
+            "answer": "If you wish to make changes to your subject registration, you may do so through the add/drop at eStudent during the two-week add/drop period (one week for Summer Term)."
+        },
+        {
+            "question": [
+                "Is it advisable to modify the subjects pre-assigned to me without consultation?",
+                "Should I consult someone before changing the subjects assigned by the department?",
+                "Is there any guidance on changing pre-assigned subjects?"
+            ],
+            "answer": "You are advised not to make any changes to the subjects pre-assigned to you by the department without consulting your department/Academic Advisor."
+        },
+        {
+            "question": [
+                "What should I do if I need to drop subjects pre-assigned by my department?",
+                "Is there a procedure for dropping subjects assigned by the department?",
+                "How can I drop subjects that were pre-assigned to me?"
+            ],
+            "answer": "Students enrolled in undergraduate degree programme and Higher Diploma programmes need to obtain prior approval from their departments should they have genuine needs to drop subjects pre-assigned/assigned by their departments."
+        },
+        {
+            "question": [
+                "What is the process for dropping all subjects in a semester?",
+                "Can I drop all subjects in a semester without approval?",
+                "How do I seek approval for zero subject enrolment in a semester?"
+            ],
+            "answer": "In case you wish to drop all the subjects in a semester, you must first seek approval from your department for zero subject enrolment. (Please refer to section 4I on “Zero Subject Enrolment and Retention of Study Place”.)"
+        },
+        {
+            "question": [
+                "What happens if I drop subjects after the add/drop period?",
+                "Is dropping subjects after the add/drop period allowed?",
+                "What is the consequence of dropping subjects post the add/drop period?"
+            ],
+            "answer": "Dropping of subjects after the add/drop period is not allowed. If you have a genuine need to do so, it will be handled as withdrawal of subject. (Please refer to section 5G on “Withdrawal of Subjects”.)"
+        },
+        {
+            "question": [
+                "What can students do to broaden their perspective before graduation?",
+                "During which period can students select additional subjects?",
+                "When will the selection of additional subjects take place?",
+                "What happens if students request to drop additional subjects after the add/drop period?",
+                "How are all subjects treated in GPA calculation?",
+                "Which subjects are counted towards the GPA for award classification?"
+            ],
+            "answer": "Students can take additional subjects before graduation to broaden their perspective. The selection of additional subjects will be done during the last two days of the add/drop period. Any requests for dropping the additional subjects after the add/drop period will be treated as subject withdrawal. All subjects will be included in the calculation of GPA while only those subjects within the programme curriculum requirement, including subjects selected to fulfill the Free Elective requirement, will be counted towards the GPA for award classification."
+        },
+        {
+            "question": [
+                "What should I do if I have a genuine need to withdraw from a subject after the add/drop period?",
+                "How can I withdraw from a subject after the add/drop period?",
+                "Is there a process for withdrawing from a subject after the add/drop period?"
+            ],
+            "answer": "If you have a genuine need to withdraw from a subject after the add/drop period, you should submit an application for withdrawal of subjects to your programme offering department."
+        },
+        {
+            "question": [
+                "Who will consider the request for withdrawal of subjects?",
+                "What is the process for considering the request for subject withdrawal?",
+                "Is there a specific authority that handles requests for subject withdrawal?"
+            ],
+            "answer": "Such request will first be considered by the subject teacher concerned and followed by the programme leader if there are strong justifications."
+        },
+        {
+            "question": [
+                "When will the deadline for requests for subject withdrawal be?",
+                "Is there a specified deadline for submitting requests for subject withdrawal?",
+                "What is the timeframe within which I should submit a request for subject withdrawal?"
+            ],
+            "answer": "Deadline for requests for subject withdrawal will be specified by the teaching department and, in any case, it will not be entertained after the commencement of the examination period."
+        },
+        {
+            "question": [
+                "Will my tuition fee be refunded if my request for subject withdrawal is approved?",
+                "Is there a refund for tuition fees if I withdraw from a subject?",
+                "What happens to the tuition fees if my request for subject withdrawal is accepted?"
+            ],
+            "answer": "For approved cases, the tuition fees paid for the withdrawn subjects will not be refunded."
+        },
+        {
+            "question": [
+                "Where can I view the withdrawn subjects in my academic records?",
+                "Is there a specific section where I can find details about withdrawn subjects?",
+                "How can I check the status of the withdrawn subjects?"
+            ],
+            "answer": "The withdrawn subjects will be shown under the 'Assessment Result' of eStudent and in the Transcript of Studies."
+        },
+        {
+            "question": [
+                "What happens if I fail to complete subject registration on the scheduled date?",
+                "What are the consequences if I don't settle my tuition fees by the payment deadline?",
+                "What happens if the fee payment is rejected by the bank?",
+                "How can I reinstate my registration if it's nullified?",
+                "What is the process for applying for reinstatement of registration?",
+                "When will applications for reinstatement of registration not be considered?",
+                "Is there a fee for the reinstatement application, and is it refundable?"
+            ],
+            "answer": "If you fail to complete subject registration on the scheduled date, fail to settle your tuition fees by the payment deadline or the fee payment is rejected by the bank, your registration on the programme, including subject enrolment, will be declared null and void and your registration/student status with the University will be removed. It is only under exceptional circumstances that you will be allowed to have your registration reinstated. Applications for reinstatement of registration can be made using Form AR118. Applications submitted after two weeks from the date of nullification of registration will not be considered. A non-refundable reinstatement application fee will be charged before the application is processed."
+        },
+        {
+            "question": [
+                "What should I study to prepare for progression through my study?",
+                "Where can I find information on assessment methods and criteria?",
+                "What document contains information on grading system and academic progress requirements?"
+            ],
+            "answer": "To prepare for progression through your study and fulfilment of the award requirements, you should study the information on the assessment method, assessment criteria, grading system, and detailed requirements for academic progress and graduation. All such information is set out in the Programme Requirement Document, which will be provided by your department."
+        },
+        {
+            "question": [
+                "What does the University emphasize regarding academic integrity?",
+                "What standards does the University uphold in examination and continuous assessment?",
+                "Where can I find information about penalties for dishonesty, including plagiarism?"
+            ],
+            "answer": "The University attaches great importance to academic integrity and honesty and upholds high standards in examination and in continuous assessment. In case of proven dishonesty, including plagiarism, the penalty is detailed in Section 11 on 'Regulations and Rules'."
+        },
+        {
+            "question": [
+                "What is the normal period of registration for a student admitted in or before 2019/20?",
+                "How long can a student be registered in the program if admitted in or before 2019/20?"
+            ],
+            "answer": "The student has exceeded the maximum period of registration for that programme, as specified in the Programme Requirement Document."
+        },
+        {
+            "question": [
+                "When will a student be de-registered if they reach the final year of the normal period of registration for a program admitted in or after 2020/21?",
+                "What happens if a student in this category gets an extension?"
+            ],
+            "answer": "The student has reached the final year of the normal period of registration for that programme, as specified in the Programme Requirement Document, unless approval has been given for extension (applicable to students admitted in or after 2020/21)."
+        },
+        {
+            "question": [
+                "In what situation will the Board of Examiners de-register a student without exception?",
+                "Are there any exceptions to de-registration for students falling under specific categories?"
+            ],
+            "answer": "When a student falls within any of the categories as stipulated above, except for category (ii) with approval for extension, the Board of Examiners shall de-register the student from the programme without exception."
+        },
+        {
+            "question": [
+                "Under what circumstances can the Board of Examiners exercise discretion to de-register a student before the specified time frame in categories (iv) and (v)?",
+                "Is there any flexibility in the de-registration process for students with extremely poor academic performance?"
+            ],
+            "answer": "Notwithstanding the above, the Board of Examiners will have the discretion to de-register students with extremely poor academic performance before the time frame specified in (iv) and (v) above."
+        },
+        {
+            "question": [
+                "How does the GPA in the Summer Term affect the progression of students to the following academic year?",
+                "Does the Summer Term GPA impact the overall progression of students?"
+            ],
+            "answer": "The progression of students to the following academic year will not be affected by the GPA obtained in the Summer Term unless Summer Term study is mandatory for all students of the programme and constitutes a requirement for graduation and is so specified in the Programme Requirement Document."
+        },
+        {
+            "question": [
+                "What is the purpose of the academic probation system?",
+                "Why is the academic probation system implemented?"
+            ],
+            "answer": "The academic probation system is implemented to give prior warning to students who need to make improvement in order to fulfill the GPA requirement of the University."
+        },
+        {
+            "question": [
+                "How is academic probation determined?",
+                "When will a student be put on academic probation?"
+            ],
+            "answer": "If your GPA is below 1.70, you will be put on academic probation in the following semester."
+        },
+        {
+            "question": [
+                "What happens if a student's GPA is 1.70 or above by the end of the probation semester?",
+                "How can a student get the 'academic probation' status lifted?"
+            ],
+            "answer": "If you are able to obtain a GPA of 1.70 or above by the end of the probation semester, the status of 'academic probation' will be lifted."
+        },
+        {
+            "question": [
+                "Where can a student find information about the 'academic probation' status?",
+                "In which section of eStudent is the 'academic probation' status reflected?"
+            ],
+            "answer": "The status of 'academic probation' will be reflected under the 'Assessment Results' of eStudent."
+        },
+        {
+            "question": [
+                "Is the 'academic probation' status visible in the Transcript of Studies?",
+                "Where is the 'academic probation' status not displayed?"
+            ],
+            "answer": "However, this status will not be displayed in the Transcript of Studies."
+        },
+        {
+            "question": [
+                "What is the requirement for study load for students on academic probation?",
+                "How many credits are students on academic probation normally required to take?"
+            ],
+            "answer": "Students on academic probation are required to take a study load of not more than 15 credits."
+        },
+        {
+            "question": [
+                "What should a student on academic probation do within one week of assessment results announcement?",
+                "When should a student complete the Form 'Study Load for Students on Academic Probation'?"
+            ],
+            "answer": "Students should, within one week of assessment results announcement, complete the Form 'Study Load for Students on Academic Probation' (Form AR150) indicating the proposed study plans and meet with the Academic Advisors to finalize the subjects and number of credits to be taken in the semester following academic probation."
+        },
+        {
+            "question": [
+                "When are examinations normally held?",
+                "When should I refer to the Academic Calendar for examination periods?",
+                "What will be put up on eStudent and the University Portal about six weeks before the examination period?",
+                "What should I do if an examination is not included in my timetable?",
+                "Where should I contact if a required examination is not in my timetable?",
+                "When might examinations be held outside the regular examination period?",
+                "In what circumstances might some examinations be arranged before the examination period or on Sundays?",
+                "How will students be informed about examinations held outside the regular period?"
+            ],
+            "answer": "Examinations, if required, are normally held at the end of the semester. Please refer to the Academic Calendar on the AR website for the examination periods. A notice will be put up on eStudent and the University Portal about six weeks before the examination period of Semesters One and Two (two weeks for the Summer Term) advising you to check your examination timetable. You should watch out for the notice nearer the time and check your examination timetable accordingly. If you discover any examination(s) which you should take is not included in your examination timetable, please contact the General Office of relevant departments. Examinations of some subjects may be held, if necessary, outside the examination period if there are not enough sessions for scheduling. In exceptional circumstances, some examinations may be arranged before the examination period, on Sunday(s) during the examination period or the days immediately following the examination period. Students will be advised by the departments concerned in advance in such circumstances."
+        },
+        {
+            "question": [
+                "What should I do before the commencement of an examination?",
+                "When am I allowed to enter the examination room/hall?",
+                "Is it permissible to bring books, scrap papers, or other written materials into the examination room/hall?",
+                "What happens if I possess unauthorized materials during an examination?"
+            ],
+            "answer": "Before the commencement of an examination, you shall not enter the examination room/hall until instructed by the invigilator. No books, scrap papers, or other written materials shall be brought into the examination room/hall. If you possess unauthorized materials during an examination, it constitutes a breach of the regulations, and you will be subject to disciplinary penalties, including reporting to the department concerned, the Student Discipline Committee, and the Chairman of the relevant Board of Examiners."
+        },
+        {
+            "question": [
+                "What electronic devices are not allowed in the examination?",
+                "Can I bring my mobile phone to the examination?",
+                "Are smartwatches with mobile applications allowed during the examination?"
+            ],
+            "answer": "The use of electronic devices such as iPod, tablets, PDA, mobile phones, MP3 players, electronic dictionaries, wearable devices, databank watches, smartwatches with mobile applications installed or wireless technologies supported, and computers are not allowed in an examination except those which are expressly allowed by the subject offering Department."
+        },
+        {
+            "question": [
+                "What should I do with electronic devices if I bring them to the examination room?",
+                "Is there any specific action required for electronic devices during the examination?",
+                "What is the procedure for handling electronic devices during the examination?"
+            ],
+            "answer": "If electronic devices are carried as accompaniment, they must be turned off (including the alarm function) before you enter the examination venue and put under the chair in a position visible to the invigilators. If in doubt, consult your subject teacher/examiner before the examination."
+        },
+        {
+            "question": [
+                "What are the alternatives if I need to use tables during the examination?",
+                "Can I use my own tables during the examination?",
+                "Are there any restrictions on the use of tables during the examination?"
+            ],
+            "answer": "If necessary, you should only use the mathematical or other tables provided. Special tables may only be used after inspection by and with the approval of the invigilator."
+        },
+        {
+            "question": [
+                "What should I bring to time the examination?",
+                "Is there a clock in the examination venue?",
+                "Are Databank watches allowed during the examination?"
+            ],
+            "answer": "You must bring your own watches to time the examination as there may not be a clock in the examination venue. Databank watches are not allowed."
+        },
+        {
+            "question": [
+                "Where should I place my personal belongings in a hall venue?",
+                "What should I do with my personal belongings in a lecture theatre/classroom venue?",
+                "What is the recommended location for placing mobile phones during the examination?"
+            ],
+            "answer": "Except for the authorised examination materials, you are required to place all your personal belongings under your chair for a hall venue or take them to the front of the examination venue for a lecture theatre/classroom venue. Mobile phones should be put visibly on top of the bag."
+        },
+        {
+            "question": [
+                "What will invigilators do regarding personal belongings?",
+                "Do invigilators have the authority to assign specific areas for personal belongings?",
+                "How will invigilators handle the placement of personal belongings?"
+            ],
+            "answer": "Depending on the actual situation, invigilators will have the discretion to assign a specific area for candidates to place their personal belongings."
+        },
+        {
+            "question": [
+                "What precautions should I take regarding my belongings during the examination?",
+                "How should I handle my valuables during the examination?"
+            ],
+            "answer": "You are advised not to bring valuables to the examination venues. The University will not be responsible for the loss of personal belongings brought to the examination venues."
+        },
+        {
+            "question": [
+                "When should I be seated for the examination?",
+                "What is the recommended time to be in my seat before the examination starts?"
+            ],
+            "answer": "You should be seated at least five minutes before the commencement of the examination in accordance with the seating plan posted outside the examination room/hall, if there is any."
+        },
+        {
+            "question": [
+                "Can I leave the examination venue once I enter?",
+                "Is there any restriction on leaving the examination venue once the examination starts?"
+            ],
+            "answer": "Once you enter the examination venue, you are not allowed to leave until 30 minutes after the commencement of the examination."
+        },
+        {
+            "question": [
+                "What documents do I need to bring to the examination?",
+                "Are there any specific identification requirements for the examination?"
+            ],
+            "answer": "You must bring your HKID card (or passport for those without an HKID card) and your student identity card to the examination. Photocopied documents are not acceptable."
+        },
+        {
+            "question": [
+                "Where should I place my ID documents during the examination?",
+                "What is the designated location for my identification documents during the exam?"
+            ],
+            "answer": "These documents should be placed on the top right hand corner of the desk for inspection by invigilators during the examination."
+        },
+        {
+            "question": [
+                "What are the consequences if my ID documents do not match during the examination?",
+                "What happens if the identification documents do not correspond to the person taking the exam?"
+            ],
+            "answer": "A candidate shall be liable to expulsion from the University if the ID documents do not correspond to the person sitting the examination. Legal proceedings will be taken against both the candidate and the substitute in such cases."
+        },
+        {
+            "question": [
+                "What should I refrain from doing until instructed by the invigilator?",
+                "When am I allowed to read the examination question paper?",
+                "What is the instruction regarding the examination question paper?"
+            ],
+            "answer": "I shall not read or work on the examination question paper until instructed to do so by the invigilator."
+        },
+        {
+            "question": [
+                "What must I do in terms of writing and drawing instruments for the examination?",
+                "What is required in terms of writing materials for the exam?",
+                "What should I provide myself with before the exam?"
+            ],
+            "answer": "I must provide myself with the necessary writing and drawing instruments for the examination."
+        },
+        {
+            "question": [
+                "Where am I allowed to write during the examination?",
+                "On what should I write my answers during the exam?",
+                "What is the specified material for writing answers during the examination?"
+            ],
+            "answer": "I shall write only on answer books and supplementary answer sheets provided for examination purpose."
+        },
+        {
+            "question": [
+                "Can I tear out sheets from the answer books during the exam?",
+                "What is the rule about tearing out sheets from the answer books?",
+                "Is it permissible to remove sheets from the answer books during the examination?"
+            ],
+            "answer": "No sheets may be torn out from the answer books."
+        },
+        {
+            "question": [
+                "What is the permitted timeframe for leaving the examination room during the first 30 minutes?",
+                "When can I leave the examination room in the last 15 minutes of the exam?"
+            ],
+            "answer": "You are not permitted to leave the examination room/hall in the first 30 minutes and the last 15 minutes of the examination."
+        },
+        {
+            "question": [
+                "What happens if I arrive late for more than 30 minutes?",
+                "Is there a time limit for late entry to the examination room?"
+            ],
+            "answer": "If you arrive late for more than 30 minutes, you will normally not be allowed to enter the examination room/hall."
+        },
+        {
+            "question": [
+                "Can I leave the examination room during the exam and come back later?",
+                "Under what circumstances am I allowed to temporarily leave the examination room and return?"
+            ],
+            "answer": "During the examination, you shall not leave the examination room/hall temporarily and return subsequently, unless accompanied by an invigilator."
+        },
+        {
+            "question": [
+                "What items am I not allowed to take with me during the examination?",
+                "Are there any restrictions on the materials I can bring into the examination room?"
+            ],
+            "answer": "You must not take with you any written materials or electronic/communication devices."
+        },
+        {
+            "question": [
+                "Will the time of my departure and return be recorded during the examination?",
+                "Is there a record of the time I leave and return to the examination room/hall?"
+            ],
+            "answer": "Your time of leaving and returning to the examination room/hall shall be logged down for reference/record."
+        },
+        {
+            "question": [
+                "What actions are prohibited during the examination?",
+                "Can candidates communicate with each other during the exam?"
+            ],
+            "answer": "There shall neither be communication among candidates nor any dishonest conduct."
+        },
+        {
+            "question": [
+                "Is there any restriction on behavior that may distract other candidates?",
+                "What should I avoid to ensure a focused environment for everyone?"
+            ],
+            "answer": "You shall not do anything which causes unnecessary distraction to other candidates."
+        },
+        {
+            "question": [
+                "What happens if irregularities are observed during the exam?",
+                "How are rule violations addressed during the examination?"
+            ],
+            "answer": "Irregularities of any kind will be reported to the Student Discipline Committee for action as appropriate."
+        },
+        {
+            "question": [
+                "Can I bring food or drink into the examination room?",
+                "Are there any exceptions regarding food and drink during the exam?"
+            ],
+            "answer": "No food or drink is allowed in the examination room/hall. However, if you need to drink water (to accompany medication, for example) or have any other urgent requirements, you can make a request to the invigilator."
+        },
+        {
+            "question": [
+                "What should I do if I need to use an electronic device during the exam?",
+                "Is the use of electronic devices allowed in the examination room?"
+            ],
+            "answer": "In case of any suspected use of electronic/communication devices by a candidate, the candidate concerned is required to show the content (such as call log/SMS/instant messages/web pages) to the invigilator upon his/her request. The invigilator will take a record of the relevant information to assess if any cheating is involved. Invigilators shall then instruct the candidate to switch off the electronic/communication device or remove the battery. The case will then be reported to the department concerned and the Student Discipline Committee."
+        },
+        {
+            "question": [
+                "Any announcements before the end of the examination?",
+                "At what point will there be an announcement during the examination?"
+            ],
+            "answer": "A reminder of the time remaining will be announced 30 minutes, 15 minutes and 5 minutes before the end of the examination."
+        },
+        {
+            "question": [
+                "How much time before the end of the examination will the reminder be announced?",
+                "When can I expect the first announcement before the end of the examination?",
+                "When does the 30-minute reminder occur during the examination?"
+            ],
+            "answer": "A reminder of the time remaining will be announced 30 minutes, 15 minutes and 5 minutes before the end of the examination."
+        },
+        {
+            "question": [
+                "What should I do at the end of the examination?",
+                "When should I stop working on the answer script?",
+                "What is the procedure after being told to stop working by the invigilator?"
+            ],
+            "answer": "You should stop working on the answer script after being told to stop working by the invigilator."
+        },
+        {
+            "question": [
+                "What should I do until I am told to leave the examination room/hall?",
+                "How should I behave after completing the examination?",
+                "What is the recommended behavior after finishing the exam?"
+            ],
+            "answer": "You should remain seated quietly until you are told to leave the examination room/hall."
+        },
+        {
+            "question": [
+                "What items can I take out of the examination room/hall?",
+                "Are there any specific items I can take with me after the exam?",
+                "What is allowed to be taken away from the examination room/hall?"
+            ],
+            "answer": "You should not take out of the examination room/hall any items issued by the invigilator, except the examination papers. Some examination papers, as specified, may not be taken away."
+        },
+        {
+            "question": [
+                "How should I leave the examination room/hall?",
+                "What is the recommended way to exit the exam venue?",
+                "What should I do to avoid disturbing other candidates after the exam?"
+            ],
+            "answer": "You should leave the examination room/hall quietly to avoid disturbance to other candidates taking examinations in the same venue."
+        },
+        {
+            "question": [
+                "Where should I address any complaint about the conduct of the examination?",
+                "To whom should I report any issues regarding the examination conduct?",
+                "What is the procedure for making a complaint about the examination conduct?"
+            ],
+            "answer": "Any complaint about the conduct of the examination shall be made in writing to the Head of Department concerned or the Registrar as soon as possible after the examination."
+        },
+        {
+            "question": [
+                "What arrangements will be made for viewing the examination scripts?",
+                "How can students find out about their individual viewing arrangements?",
+                "Can students take the examination scripts away after viewing?",
+                "Are photocopies allowed to be made by the students?",
+                "What is the procedure for returning the examination scripts?",
+                "When should students return the scripts after viewing?"
+            ],
+            "answer": "Subject offering departments will inform the students concerned of their individual arrangements for viewing the examination scripts. Students are not allowed to take the scripts away or make photocopies and are required to return them to the departments concerned immediately after viewing."
+        },
+        {
+            "question": [
+                "How can I check my assessment results?",
+                "Where should I go to view my assessment results?",
+                "What is the process for accessing assessment results?"
+            ],
+            "answer": "You can check your assessment results from eStudent at http://www.polyu.edu.hk/student."
+        },
+        {
+            "question": [
+                "When are assessment results typically released?",
+                "What is the timeframe for assessment results to be available?",
+                "When can I expect to see my assessment results?"
+            ],
+            "answer": "The assessment results are released one day after the results finalisation dates, which are listed in the Academic Calendar."
+        },
+        {
+            "question": [
+                "What should I do if I can't complete all assessment components due to illness?",
+                "How can I apply for a late assessment?",
+                "Within what timeframe should I submit my application for a late assessment?"
+            ],
+            "answer": "If you have been absent from an examination or are unable to complete all assessment components of a subject because of illness, injury or other unforeseeable reasons, you may apply for a late assessment. Application in writing should be made to the Head of Department offering the subject within five working days from the date of the examination."
+        },
+        {
+            "question": [
+                "What documents should I include with my late assessment application?",
+                "Is a medical certificate required for a late assessment application?"
+            ],
+            "answer": "Any supporting documents such as a medical certificate should be submitted along with the application for a late assessment."
+        },
+        {
+            "question": [
+                "Who has the authority to approve late assessment applications?",
+                "Who decides the means for late assessments?",
+                "Who can grant approval for a late assessment?"
+            ],
+            "answer": "Approval of applications for late assessment and the means for such late assessments shall be given by the Head of Department offering the subject or the Subject Teacher concerned, in consultation with the Programme Leader."
+        },
+        {
+            "question": [
+                "If I am allowed to take a late assessment, how will it be considered?",
+                "What will be the status of the late assessment in terms of grading?"
+            ],
+            "answer": "In case you are permitted to take a late assessment, that examination or other forms of assessment will be regarded as a first assessment, and the actual grade attained will be awarded."
+        },
+        {
+            "question": [
+                "What is the responsibility of Subject Teachers regarding coursework and examination scripts?",
+                "Who finalizes subject grades?",
+                "Which panel reviews and finalizes subject grades?",
+                "Before being released to students, what happens to subject grades?",
+                "Who makes decisions on a student's classification of award?",
+                "In cases of de-registration or extenuating circumstances, which body is responsible for making decisions?",
+                "What should students do in advance to address factors affecting their assessment results?",
+                "Who should students inform about factors that have detrimentally affected their assessment results?"
+            ],
+            "answer": "Subject Teachers, in respect of the subject they teach, have the sole responsibilities for marking and grading students’ coursework and examinations scripts. Subject grades shall be reviewed and finalised by the Subject Assessment Review Panel (SARP) before being formally released to students and submitted to the Board of Examiners (BoE). The BoE for each programme is responsible for making a decision on the student’s classification of award and on cases such as de-registration or those with extenuating circumstances. It is, therefore, the responsibility of students to make known to Subject Teachers/SARP/BoE/other authorised parties of the University, in advance and through the department concerned, the factors which they believe have detrimentally and materially affected their assessment results."
+        },
+        {
+            "question": [
+                "What could be considered grounds for a review of the decision?",
+                "In what situations can a candidate request a review of the decision?",
+                "When might a candidate's examination performance be adversely affected?",
+                "What factors could adversely affect a candidate's examination performance?",
+                "Why might a candidate be unwilling to divulge certain factors before a decision is made?",
+                "What is required to support a candidate's request for a review of the decision?",
+                "What type of evidence must be provided by a candidate to support their request?",
+                "When should a candidate present evidence to support a review of the decision?"
+            ],
+            "answer": "The following may constitute grounds for a review of the decision: if a candidate has evidence to support that his/her examination performance has been adversely affected by illness or other factors beyond his/her control which he/she was unable or, for valid reasons, unwilling to divulge before the Subject Teacher/SARP/BoE/other authorised parties of the University made their decision and of which they were unaware. The request from the candidate must be supported by medical certificates or other documentary evidence."
+        },
+        {
+            "question": [
+                "What should I do if there is evidence of a material administrative error?",
+                "How can I address a situation where examinations were not conducted in accordance with regulations?",
+                "Is there a process for appealing if there is a manifest inconsistency in marking?",
+                "What grounds are considered valid for appeal if there are material irregularities in the process?",
+                "Can a student appeal based solely on disagreement with marking?",
+                "When is a student's disagreement with marking considered an adequate ground for appeal?"
+            ],
+            "answer": "A student’s disagreement with the marking or with the decision is not in itself an adequate ground for an appeal."
+        },
+        {
+            "question": [
+                "What is the fee for appealing against the decision on subject results?",
+                "How much do students need to pay for each examination paper when appealing?",
+                "Where can students obtain the payment forms for the appeal fee?",
+                "Can students receive the payment form through email?",
+                "Is there an additional fee for appealing multiple examination papers?"
+            ],
+            "answer": "Students appealing against the decision on their subject results shall pay a fee of HK$125 per examination paper. Payment forms are obtainable from the Academic Registry Service Centre. Softcopies of the payment form can also be sent to students via email by their programme offering departments or the Academic Registry upon request. If more than one examination paper is involved, an extra fee of HK$125 shall be charged for each additional paper."
+        },
+        {
+            "question": [
+                "Under what circumstances will the appeal fee be refunded?",
+                "What happens if the appeal is successful?",
+                "Is there any possibility of a refund for the appeal fee?",
+                "What is the outcome in case the appeal is upheld?"
+            ],
+            "answer": "The fee shall be refunded if the appeal is successful/upheld."
+        },
+        {
+            "question": [
+                "What is the timeframe for a student to submit their appeal in writing?",
+                "When should a student make their appeal to the Head of Department?",
+                "How long does a student have to file their appeal after the public announcement of their overall results?",
+                "What is the deadline for submitting the appeal to the Head of Department?"
+            ],
+            "answer": "A student should make his/her appeal in writing to his/her Head of Department within one calendar week upon the public announcement of his/her overall results, i.e. the date when the results are announced to students via the web."
+        },
+        {
+            "question": [
+                "Who is responsible for handling the appeal if the student is in a department-based programme?",
+                "If a student is in a department-based programme, who deals with the appeal?",
+                "Who will address the appeal if the student is studying in a department-based programme or scheme?"
+            ],
+            "answer": "The Head of Department shall deal with the appeal if the student is studying in a department-based programme/scheme."
+        },
+        {
+            "question": [
+                "Who handles the appeal for students in Faculty-/School-hosted Undergraduate Programmes?",
+                "If a student is in a Faculty-/School-hosted Undergraduate Programme, who is the designated person to address the appeal?",
+                "To whom does the appeal go for Faculty-/School-hosted Undergraduate Programmes?"
+            ],
+            "answer": "The Programme Leader is responsible for handling the appeal for Faculty-/School-hosted Undergraduate Programmes."
+        },
+        {
+            "question": [
+                "For which type of schemes does the Scheme Committee Chairman handle appeals?",
+                "Who deals with appeals for Postgraduate Schemes or Faculty/School-hosted Undergraduate Schemes?",
+                "If a student is in a Postgraduate Scheme, who is responsible for addressing the appeal?"
+            ],
+            "answer": "The Scheme Committee Chairman shall refer the appeal to the following authorised person: the Programme Leader – for Faculty-/School-hosted Undergraduate Programmes; or the Scheme Committee Chairman – for Postgraduate Schemes or Faculty/School-hosted Undergraduate Schemes."
+        },
+        {
+            "question": [
+                "What should accompany the appeal for inspection by the department concerned?",
+                "Is there any specific document that needs to be included with the appeal for inspection?",
+                "What should be provided along with the appeal letter for examination by the department?"
+            ],
+            "answer": "The appeal should be accompanied by a copy of the fee receipt, for inspection by the department concerned."
+        },
+        {
+            "question": [
+                "What information should be included in the appeal letter?",
+                "What does the student need to address in the letter of appeal?",
+                "What is required for a complete account of the grounds for the appeal?"
+            ],
+            "answer": "The student should give a complete account of the grounds for the appeal in the letter, and provide any supporting evidence."
+        },
+        {
+            "question": [
+                "Within what timeframe should the department inform the student of the appeal result?",
+                "How long does the department have to notify the student of the appeal result?",
+                "When should the student be informed of the appeal result?"
+            ],
+            "answer": "Departments should inform the student concerned of the appeal result within one calendar week after either the announcement of the student’s overall result or receipt of the letter of appeal, whichever is later."
+        },
+        {
+            "question": [
+                "What is the next step if the appellant is dissatisfied with the department's decision?",
+                "What should the appellant do if they are not satisfied with the decision from the Head of Department?",
+                "Is there an option for further appeal if the appellant is dissatisfied with the initial decision?"
+            ],
+            "answer": "If the appellant is dissatisfied with the decision, he/she may then appeal in writing to the Registrar within one calendar week from the date of the department’s reply."
+        },
+        {
+            "question": [
+                "What information should the appellant provide when appealing to the Registrar?",
+                "What details are required when submitting an appeal to the Registrar?",
+                "What are the necessary pieces of information to include when appealing in writing to the Registrar?"
+            ],
+            "answer": "He/She should provide the following information together with other relevant documents in support of the appeal: name in English and Chinese; student number; programme title, year and class of study; subject results appealing against; and grounds for appeal."
+        },
+        {
+            "question": [
+                "Who is responsible for referring the appeal case to the Academic Appeals Committee?",
+                "What is the role of the Registrar in the appeal process?",
+                "Who determines whether there are grounds for reconsideration in the appeal process?"
+            ],
+            "answer": "The Registrar shall then refer the case to the Academic Appeals Committee (AAC), which shall determine whether there are prima facie grounds for a reconsideration of the decision of the Subject Teacher/SARP concerned."
+        },
+        {
+            "question": [
+                "What fee must students pay when appealing decisions on de-registration?",
+                "How much is the fee for appealing de-registration decisions?",
+                "Where can students obtain the payment forms for the appeal fee?"
+            ],
+            "answer": "Students appealing against the decisions on de-registration shall pay a fee of HK$125. Payment forms are obtainable from the Academic Registry Service Centre."
+        },
+        {
+            "question": [
+                "How can students receive softcopies of the payment form for the appeal fee?",
+                "In what format can students receive the payment form for the appeal fee?",
+                "Who can send softcopies of the payment form to students upon request?"
+            ],
+            "answer": "Softcopies of the payment form can also be sent to students via email by their programme offering departments or the Academic Registry upon request."
+        },
+        {
+            "question": [
+                "Under what conditions will the fee for appealing de-registration decisions be refunded?",
+                "In what situation will students get a refund for the appeal fee?",
+                "What happens to the fee if the appeal is successful?"
+            ],
+            "answer": "The fee shall be refunded if the appeal is successful/upheld."
+        },
+        {
+            "question": [
+                "What form should students complete and submit when appealing decisions on de-registration?",
+                "Which form is required for the appeal against the Decision of BoE on De-registration?",
+                "To whom should students submit Form AR149?"
+            ],
+            "answer": "Students should complete and submit Form AR149 'Appeal against the Decision of BoE on De-registration' to the General Office of the department hosting the programme/award (or to the Faculty/School Office if the programme/award is hosted by the Faculty/School) within one calendar week upon the public announcement of the overall results."
+        },
+        {
+            "question": [
+                "When should students submit Form AR149 for the appeal against de-registration decisions?",
+                "Within what timeframe must students submit the appeal form AR149?",
+                "What is the deadline for submitting Form AR149?"
+            ],
+            "answer": "Students should complete and submit Form AR149 to the General Office of the department hosting the programme/award within one calendar week upon the public announcement of the overall results, i.e., the date when the results are announced to students via the web."
+        },
+        {
+            "question": [
+                "What responsibility does the appellant have when submitting Form AR149?",
+                "What details and evidence should the appellant provide when submitting the appeal form?",
+                "Who is responsible for making known the details and evidence supporting the appeal?"
+            ],
+            "answer": "When submitting the form, the appellant has the responsibility to make known to the AAC full details and evidence that would support his/her appeal."
+        },
+        {
+            "question": [
+                "Which body will consider the appeals submitted by students?",
+                "Who will deliberate the appeal cases submitted by students?",
+                "What is the authority responsible for considering appeals against de-registration decisions?"
+            ],
+            "answer": "The appeal by the students will be considered by the AAC, which will deliberate the appeal cases making reference to the recommendations of the programme-hosting department/faculty and the Faculty Dean/School Board Chairman."
+        },
+        {
+            "question": [
+                "What is the fee for appealing against the decision on award classification?",
+                "How much do students need to pay when appealing award classification decisions?"
+            ],
+            "answer": "Students appealing against the decisions on award classification shall pay a fee of HK$125."
+        },
+        {
+            "question": [
+                "Where can students obtain the payment forms for the appeal fee?",
+                "From where can students get the payment form for the award classification appeal fee?"
+            ],
+            "answer": "Payment forms are obtainable from the Academic Registry Service Centre."
+        },
+        {
+            "question": [
+                "How can students receive softcopies of the payment form?",
+                "In what way can students get electronic copies of the payment form for the appeal fee?"
+            ],
+            "answer": "Softcopies of the payment form can also be sent to students via email by their programme offering departments or the Academic Registry upon request."
+        },
+        {
+            "question": [
+                "When will the appeal fee be refunded?",
+                "Under what circumstance will the fee for appeal against award classification decision be reimbursed?"
+            ],
+            "answer": "The fee shall be refunded if the appeal is successful/upheld."
+        },
+        {
+            "question": [
+                "When should a student make an appeal in writing to the Head of Department?",
+                "Within what time frame should a student submit a written appeal to the Head of Department?"
+            ],
+            "answer": "A student should make his/her appeal in writing to his/her Head of Department within one calendar week upon the public announcement of the overall results, i.e., the date when the results are announced to students via the web."
+        },
+        {
+            "question": [
+                "What information should a student provide when making an appeal?",
+                "When appealing, what details should a student include in the written appeal to the Head of Department?"
+            ],
+            "answer": "He/She should provide the following information together with relevant documentation, if any, in support of the appeal: (i) name in English and Chinese; (ii) student number; (iii) programme title, year and class of study; and (iv) grounds for appeal."
+        },
+        {
+            "question": [
+                "Who is responsible for determining whether there are prima facie grounds for a reconsideration of the decision on award classification?",
+                "To whom does the Head of Department refer the case when a student appeals against the decision on award classification?"
+            ],
+            "answer": "The Head of Department shall then refer the case to the Chairman of Academic Appeals Committee, who shall determine whether there are prima facie grounds for a reconsideration of the decision of BoE’s and/or other authorised parties of the University."
+        },
+        {
+            "question": [
+                "What are the conditions for a student to be eligible for an award?",
+                "Could you list the criteria for eligibility for an award?",
+                "What does a student need to satisfy to be eligible for an award?",
+                "What are the requirements for receiving an award?",
+                "What conditions must a student meet to be eligible for an award?"
+            ],
+            "answer": "A student would be eligible for an award if he/she satisfies all the conditions listed below: i) accumulation of the requisite number of credits for the particular award as defined in the Programme Requirement Document; ii) satisfying the residential requirement for at least one-third of the credits normally required for the award, unless the professional bodies stipulate otherwise; iii) satisfying all requirements as defined in the Programme Requirement Document and as specified by the University; and iv) having a GPA of 1.70 or above at the end of the programme."
+        },
+        {
+            "question": [
+                "What is the minimum GPA required for eligibility for an award?",
+                "Could you specify the GPA criterion for eligibility for an award?",
+                "What GPA does a student need to have to be eligible for an award?",
+                "What is the GPA threshold for eligibility for an award?"
+            ],
+            "answer": "A student is required to have a GPA of 1.70 or above at the end of the programme to be eligible for an award."
+        },
+        {
+            "question": [
+                "When is a student required to graduate?",
+                "Could you explain when a student is required to graduate?",
+                "At what point is a student expected to graduate?",
+                "What triggers the requirement for a student to graduate?"
+            ],
+            "answer": "A student is required to graduate as soon as he/she satisfies all the above conditions for the award."
+        },
+        {
+            "question": [
+                "What happens to a student's registration if they become eligible to graduate or leave the University?",
+                "Could you clarify the status of a student's registration upon eligibility to graduate or leaving the University?",
+                "When a student is eligible to graduate or leaves the University, what happens to their registration for the following semester/Summer Term?",
+                "What is the effect on a student's registration when they are eligible to graduate or decide to leave the University?"
+            ],
+            "answer": "Upon confirmation of the eligibility to graduate or leaving the University, registration for subjects (including the follow-on term of consecutive subjects) in the following semester/Summer Term will be nullified and removed."
+        },
+        {
+            "question": [
+                "How can I apply for graduation for programmes other than undergraduate degree programmes?",
+                "What is the process for applying to graduate with a specific award?",
+                "When should I submit an application for graduation?",
+                "What form should I use to apply for graduation?",
+                "What happens if I submit a late application for graduation?"
+            ],
+            "answer": "Students can apply to graduate with a specific award by submitting an application via Form AR84c to the department concerned in the semester within which they will have fulfilled the graduation requirement. Any late application may cause unnecessary delay in processing and affect the graduation date."
+        },
+        {
+            "question": [
+                "How will I be notified of the graduation application results?",
+                "Where can I check whether my programme study streams have been updated as approved?",
+                "What should I do if I don't receive an email notification about the graduation application results?"
+            ],
+            "answer": "Students will be notified of the application results by email within 3 weeks after the close of the application period. They can also check their programme study streams (sub-code) on eStudent[http://www.polyu.edu.hk/student > My Profile > Study Information]. If no email notification is received, they should contact their programme offering department for clarification."
+        }
+    ]
+}

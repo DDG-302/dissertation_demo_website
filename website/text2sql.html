@@ -19,37 +19,46 @@
 
     }
 </style>
-<script src="website/lib/petite-vue/petite-vue.life.js"></script>
+<script src="website/lib/petite-vue/petite-vue.iife.js"></script>
 <script type="module">
-    import { createApp } from '/website/lib/petite-vue/petite-vue.es.js'
+    import { createApp, reactive } from '/website/lib/petite-vue/petite-vue.es.js'
+    const global_values = reactive({
+        examples: [],
+        example_idx: 0 // request examples
+    })
     createApp({
-        tokens: 100,
-        max_tokens: 4096,
-        min_tokens: 0,
-        query_text: "",
-        output_textarea: "",
-        inputBlurListener(e){
-            if(this.tokens > this.max_tokens){
+        tokens: 100, // user request token num
+        max_tokens: 4096, // token limit
+        min_tokens: 0, // token limit
+        query_text: "", // user input
+        output_textarea: "", // output value
+        global_values, // used to update values from outside
+        input_blur_listener(e) {
+            // when user finish token input
+            if (this.tokens > this.max_tokens) {
                 this.tokens = this.max_tokens;
             }
-            else if(this.tokens < this.min_tokens){
+            else if (this.tokens < this.min_tokens) {
                 this.tokens = this.min_tokens;
             }
-            else if(Number.isNaN(this.tokens) || "-" in this.tokens || "+" in this.tokens){
+            else if (Number.isNaN(this.tokens) || "-" in this.tokens || "+" in this.tokens) {
                 alert("not a number");
                 this.tokens = 0;
             }
-            else{
+            else {
                 alert("a number!")
                 alert(this.tokens)
             }
         },
-        input_event(e){
+        input_event(e) {
+            // when token input change
             this.tokens = e.target.value
         },
-        query_submit(){
+        query_submit() {
+            // submit user input to get ai response
             let data = JSON.stringify({
-                "query": this.query_text
+                "query": this.query_text,
+                "tokens": this.tokens
             })
             $.ajax({
                 url: "/post_query",
@@ -57,61 +66,124 @@
                 dataType: "json",
                 contentType: "application/json",
                 data: data,
-                complete: (xhr, status) => {
-                    console.log(xhr)
-                    console.log(status)
-                },
                 success: (result, status, xhr) => {
-                    console.log(result)
+                    // console.log(result)
                     let msg = result["msg"]
                     this.output_textarea = "[INPUT]\n"
                     this.output_textarea += msg["query"] + "\n\n[OUTPUT]\n"
                     this.output_textarea += msg["response"]
+                },
+                error: (xhr, status, error) => {
+                    // console.error(status)
+                    // console.error(xhr)
+                    alert(status + "\n" + xhr.responseText)
+                    this.output_textarea = status + "\n" + xhr.responseText
                 }
             }
-        )
+            )
+        },
+        on_example_click(e) {
+            // copy example to input box
+            this.query_text = e.target.innerText
+        },
+        get_examples(e) {
+            // get examples from server
+            console.log("get ex")
+            $.get("/get_input_examples",
+                {
+                    "example_idx": global_values.example_idx
+                },
+                function (data, status, xhr) {
+                    if (status == "success") {
+                        console.log(data)
+
+                        global_values.examples = data["examples"]
+                        global_values.example_idx = data["example_idx"]
+
+                    }
+                    else {
+                        console.error(status + "\n" + xhr)
+                        alert(status + "\n" + xhr.responseText)
+                    }
+                },
+            )
+        },
+        testresize(e) {
+            console.log("rerere")
+            console.log(e.height)
         }
 
-    }).mount()
-    
+    }).mount();
+
 </script>
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-sm-9">
-            <div class="form-group">
-                <label for="input">Input</label>
-                <textarea class="form-control" id="input" style="height:350px"
-                    placeholder="Input your query" v-model="query_text"></textarea>
-            </div>
-        </div>
-
-        <div class="row col-sm-3 justify-content-center">
-            <div class="col-sm-12">
-                <label for="config">Config</label>
-                <div class="card" style="height:350px">
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="range-input">Max Tokens: </label>
-                            <input type="number" class="form-control" id="range-input" :min="min_tokens" :max="max_tokens" step="1" :value="tokens" @input="input_event" @blur="inputBlurListener"/>
-                            <input type="range" class="form-control-range" id="range-value" :min="min_tokens" :max="max_tokens" step="1" v-model="tokens" />
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input">Input</label>
+                        <textarea class="form-control" id="input" style="height:350px;min-height: 350px;"
+                            placeholder="Input your query" v-model="query_text"></textarea>
+                            <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
+                            <!-- <div class="row justify-content-center mb-5">
+                                <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
+                            </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-6" style="height:inherit">
+                    <div class="justify-content-center" >
+                        <div class="col-sm-12" >
+                            <label for="config">Config</label>
+                            <div class="card" style="height:inherit">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="range-input">Max Tokens: </label>
+                                        <input type="number" class="form-control" id="range-input" :min="min_tokens"
+                                            :max="max_tokens" step="1" :value="tokens" @input="input_event"
+                                            @blur="input_blur_listener" />
+                                        <input type="range" class="form-control-range" id="range-value"
+                                            :min="min_tokens" :max="max_tokens" step="1" v-model="tokens" />
+                                            
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <button class="btn btn-info" @click="get_examples">Get Input Examples</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="other">Output</label>
+                        <textarea class="form-control" id="result" rows="5" placeholder="Output"
+                            v-model="output_textarea" readonly style="background-color: azure;height:350px"></textarea>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group">
-                <label for="other">Output</label>
-                <textarea class="form-control" id="result" rows="5" placeholder="Output" v-model="output_textarea" readonly style="background-color: azure;"></textarea>
+        <div class="col-sm-3" style="height:100%">
+            <div class="form-group" style="height:inherit">
+                <label for="other">Example</label>
+                <div style="overflow-x:auto;height: inherit;">
+                    <div class="alert alert-info" v-for="example in global_values.examples">
+                        <p style="cursor: pointer" @click="on_example_click">{{ example }}</p>
+                    </div>
+                </div>
+                <button class="btn btn-info" @click="get_examples">Get Input Examples</button>
             </div>
         </div>
+
+
     </div>
 
-    <div class="row justify-content-center mb-5">
-        <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
-    </div>
+    
+
 
 </div>

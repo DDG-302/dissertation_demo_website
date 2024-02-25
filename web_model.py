@@ -4,4 +4,5 @@ from dataclasses import dataclass
 
 # @dataclass
 class QueryRequest(BaseModel):
-    query:str
+    query: str
+    tokens: int
