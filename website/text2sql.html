@@ -24,7 +24,10 @@
     import { createApp, reactive } from '/website/lib/petite-vue/petite-vue.es.js'
     const global_values = reactive({
         examples: [],
-        example_idx: 0 // request examples
+        example_idx: 0, // request examples
+        example_style: "overflow-x:auto; max-height: 450px",
+        config_card_style: "overflow-x:auto; height: 450px",
+        
     })
     createApp({
         tokens: 100, // user request token num
@@ -88,7 +91,6 @@
         },
         get_examples(e) {
             // get examples from server
-            console.log("get ex")
             $.get("/get_input_examples",
                 {
                     "example_idx": global_values.example_idx
@@ -107,82 +109,87 @@
                     }
                 },
             )
-        },
-        testresize(e) {
-            console.log("rerere")
-            console.log(e.height)
+            
         }
 
     }).mount();
 
+    function observeHeight() {
+        const resizeObserver = new ResizeObserver(function() {
+            global_values.example_style = "overflow-x:auto; max-height: "+ document.getElementById('input').clientHeight + "px"
+            global_values.config_card_style = "overflow-x:auto; height: "+ document.getElementById('result').clientHeight + "px"
+        });
+
+        resizeObserver.observe(document.getElementById('result'));
+        resizeObserver.observe(document.getElementById('input'));
+    }
+
+    observeHeight();
+    global_values.example_style = "overflow-x:auto; max-height: "+ document.getElementById('result').clientHeight + "px"
+    global_values.config_card_style = "overflow-x:auto; height: "+ document.getElementById('result').clientHeight + "px"
 </script>
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-sm-9">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="input">Input</label>
-                        <textarea class="form-control" id="input" style="height:350px;min-height: 350px;"
-                            placeholder="Input your query" v-model="query_text"></textarea>
-                            <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
-                            <!-- <div class="row justify-content-center mb-5">
-                                <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
-                            </div> -->
-                    </div>
-                </div>
-                <div class="col-sm-6" style="height:inherit">
-                    <div class="justify-content-center" >
-                        <div class="col-sm-12" >
-                            <label for="config">Config</label>
-                            <div class="card" style="height:inherit">
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="range-input">Max Tokens: </label>
-                                        <input type="number" class="form-control" id="range-input" :min="min_tokens"
-                                            :max="max_tokens" step="1" :value="tokens" @input="input_event"
-                                            @blur="input_blur_listener" />
-                                        <input type="range" class="form-control-range" id="range-value"
-                                            :min="min_tokens" :max="max_tokens" step="1" v-model="tokens" />
-                                            
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <button class="btn btn-info" @click="get_examples">Get Input Examples</button>
-                                </div>
+            <div class="form-group">
+                <label for="other">Output</label>
+                <textarea class="form-control" id="result" rows="5" placeholder="Output"
+                    v-model="output_textarea" readonly style="background-color: azure;height:240px"></textarea>
+            </div>
+        </div>
+        
+        <div class="col-sm-3" style="height:inherit">
+            <div class="justify-content-center" >
+                <div class="col-sm-12" >
+                    <label for="config">Config</label>
+                    <div :style="global_values.config_card_style" class="card" >
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="range-input">Max Tokens: </label>
+                                <input type="number" class="form-control" id="range-input" :min="min_tokens"
+                                    :max="max_tokens" step="1" :value="tokens" @input="input_event"
+                                    @blur="input_blur_listener" />
+                                <input type="range" class="form-control-range" id="range-value"
+                                    :min="min_tokens" :max="max_tokens" step="1" v-model="tokens" />
+                                    
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-info" @click="get_examples" @vue:mounted="get_examples">Get Input Examples</button>
                             </div>
                         </div>
+                
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label for="other">Output</label>
-                        <textarea class="form-control" id="result" rows="5" placeholder="Output"
-                            v-model="output_textarea" readonly style="background-color: azure;height:350px"></textarea>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-sm-3" style="height:100%">
-            <div class="form-group" style="height:inherit">
-                <label for="other">Example</label>
-                <div style="overflow-x:auto;height: inherit;">
-                    <div class="alert alert-info" v-for="example in global_values.examples">
-                        <p style="cursor: pointer" @click="on_example_click">{{ example }}</p>
-                    </div>
-                </div>
-                <button class="btn btn-info" @click="get_examples">Get Input Examples</button>
             </div>
         </div>
-
-
     </div>
-
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="form-group">
+                <label for="input">Input</label>
+                <textarea class="form-control" id="input" style="height:250px;min-height: 250px;"
+                    placeholder="Input your query" v-model="query_text"></textarea>
+                    <div class="row justify-content-center mt-1 width:100%">
+                        <button type="submit" class="btn btn-primary" id="submit-btn" @click="query_submit">submit</button>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm-3 justify-content-center " >
+            <div class="form-group" >
+                <label for="other">Example</label>
+                
+                <div :style="global_values.example_style">
+                    <div class="alert alert-info"  v-for="example in global_values.examples" >
+                        <p style="cursor: pointer; font-size:14px;" @click="on_example_click">{{ example }}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
     
 
 
