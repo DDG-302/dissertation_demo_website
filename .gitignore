@@ -1,0 +1,5 @@
+.streamlit
+__pycache__
+test_temp
+temp
+db_detail.py

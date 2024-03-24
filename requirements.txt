@@ -1,0 +1,6 @@
+numpy==1.24.4
+pandas==2.0.3
+Requests==2.31.0
+sqlglot==22.5.0
+sqlparse==0.4.4
+streamlit==1.30.0
