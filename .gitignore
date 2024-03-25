@@ -1,2 +1,6 @@
+.streamlit
 __pycache__
-dev
+test_temp
+temp
+db_detail.py
+*.log

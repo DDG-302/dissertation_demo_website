@@ -1,77 +1,95 @@
-import datetime
-
-import jinja2
-import uvicorn
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse, JSONResponse
-from fastapi.staticfiles import StaticFiles
-# from ai import ai_test
-from web_model import *
-
-app = FastAPI()
-templateLoader = jinja2.FileSystemLoader(searchpath="./")
-templateEnv = jinja2.Environment(loader=templateLoader)
-TEMPLATE_LAYOUT_FILE = "website/layout.html"
-TEMPLATE_INDEX_FILE = "website/index.html"
-INDEX_BASIC_FILE = "website/text2sql.html"
-template_layout = templateEnv.get_template(TEMPLATE_LAYOUT_FILE)
-template_index = templateEnv.get_template(TEMPLATE_INDEX_FILE)
-with open(INDEX_BASIC_FILE, "r", encoding="utf8") as f: 
-    index_basic = f.read()
-
-HTMLRESPONSE_index = template_layout.render({
-    "render_body": template_index.render({
-        "basic": index_basic
-    })
-})
+import streamlit as st
 
 
-@app.get("/", response_class=HTMLResponse)
-async def index():
-    return HTMLRESPONSE_index
 
-@app.post("/post_query", response_class=JSONResponse)
-async def post_query(query_request: QueryRequest = Body()):
-    return {"server": "ok",
-            "msg": {
-                "query": query_request.query,
-                "response": "simple response"
-            }}
-    result = ai_test.get_ans(query_request.query)
-    possible_questions = result[0][0]
-    ans = result[1][0]
-    response = "YOU MAY WANT TO ASK => \n"
-    for pq in possible_questions:
-        response += pq + "\n"
-    response += "ANS => \n" + ans
-    return {"server": "ok",
-            "msg": {
-                "query": query_request.query,
-                "response": response
-            }}
-
-@app.get("/get_input_examples", response_class=JSONResponse)
-async def get_input_examples(example_idx:int):
-    return {
-        "examples": ["What was the first publicly-funded post-secondary technical institution in Hong Kong?What was the first publicly-funded post-secondary technical institution in Hong Kong?",
-        "What was the first publicly-funded post-secondary technical institution in Hong Kong?What was the first publicly-funded post-secondary technical institution in Hong Kong?",
-        "What was the first publicly-funded post-secondary technical institution in Hong Kong?What was the first publicly-funded post-secondary technical institution in Hong Kong?",
-        "What was the first publicly-funded post-secondary technical institution in Hong Kong?What was the first publicly-funded post-secondary technical institution in Hong Kong?",
-        "What was the first publicly-funded post-secondary technical institution in Hong Kong?What was the first publicly-funded post-secondary technical institution in Hong Kong?"],
-        "example_idx": example_idx
-    }
-    examples = []
-    for i in range(5):
-        examples.append(ai_test.similar_question_list[example_idx][0])
-        example_idx = (example_idx + 1)% len(ai_test.similar_question_list)
-    return {
-        "examples": examples,
-        "example_idx": example_idx
-    }
-
-        
-
-
-app.mount("/website", StaticFiles(directory="website"), name="web")
 if __name__ == "__main__":
-    uvicorn.run(app=app, host="127.0.0.1", port=5000)
+
+
+    st.set_page_config(
+        "Text2SQL - TEST",
+        initial_sidebar_state="expanded",
+        menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        }
+    )
+    # to make sure st.set_page_config are called at the very beginning
+    from dialogue import chatBot
+    from performance import performance 
+    with st.sidebar:
+        st.image(
+            "assets/img/logo2.png",
+            caption="test img",
+            # width=300
+        )
+        st.caption(
+            "version: 1.0"
+        )
+        pages_options = ("AI", "Database detail", "Performance")
+        with st.sidebar:
+            page = st.selectbox(
+                "Pages",
+                pages_options
+            )
+    if page == pages_options[0]:
+        chatBot.dialogue_page()
+    elif page == pages_options[1]:
+        chatBot.database_detail_page()
+    elif page == pages_options[2]:
+        performance.performance_page()
+
+    
+    # prompt = st.chat_input("Input your query")
+    # # Initialize chat history
+    # if "messages" not in st.session_state:
+    #     st.session_state.messages = []
+
+
+    # # Display chat messages from history on app rerun
+    # for message in st.session_state.messages:
+    #     with st.chat_message(message["role"]):
+    #         st.markdown(message["content"])
+            
+    #         if(message.get("data", None) is not None):
+    #             with st.container(height=400):
+    #                 st.table(message["data"])
+    #         if(message.get("error", None) is not None):
+    #             st.write(message["error"])
+
+    #     # React to user input
+
+    # if prompt:
+    #     # Display user message in chat message container
+    #     with st.chat_message("user"):
+    #         st.markdown(prompt)
+            
+    #     # Add user message to chat history
+    #     st.session_state.messages.append({"role": "user", "content": prompt})
+    #     if(st.session_state.Input_Options == "Natural Language"):
+    #         import ai.ddeval
+    #         response = ai.ddeval.get_sql(prompt)
+    #         # response = requests.post("http://127.0.0.1:5000/post_query",  json={"prompt": prompt}).json()["response"]
+    #     else:
+    #         response = prompt
+    
+    #     # Display assistant response in chat message container
+    #     er = None
+    #     df = None
+    #     with st.chat_message("assistant"):
+    #         random_col_num = random.randint(1, 15)
+    #         st.markdown(response)
+            
+    #         # df = pd.DataFrame(np.random.randn(5, random_col_num), columns=("col %d" % i for i in range(random_col_num)))
+    #         from sqlite3 import DatabaseError
+    #         try:
+    #             df = conn.query(response)
+    #             cont = st.container(height=400)
+    #             cont.table(df)
+    #         except Exception as e:
+    #             # print(type(e))
+    #             st.write(e.args)
+    #         # with st.container(height=100):
+                
+    #         #     st.table(df)
+    #     # Add assistant response to chat history
+        
+    #     st.session_state.messages.append({"role": "assistant", "content": response, "data": df, "error": er})
