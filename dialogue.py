@@ -6,8 +6,9 @@ from enum import Enum
 import json, os
 import sqlite3
 import requests
-import utils.file_upload as file_upload
+# import utils.file_upload as file_upload
 import config
+import mylogger
 
 class MessageType(Enum):
     STR = 0
@@ -127,22 +128,8 @@ class ChatBot:
             self.init_history_for_id(id)
         st.session_state[uid][id][-1]["response"].append(response)
 
-    def upload_database_structure(self, bytes_data: bytes, uid: str, choice: DatabaseSchemaOptions, file_name: str=None, overwrite: bool = False):
-        '''store bytes to the disk, request for preprocess data
-
-        Args:
-            bytes_data (bytes): data
-            uid (str): user id, to determine directory
-            choice (DatabaseSchemaOptions): _description_
-            file_name (str, optional): Only for SQL file. Defaults to None.
-        '''
-        if bytes_data is not None:
-            if choice == DatabaseSchemaOptions.JSONLIKE:
-                file_upload.upload_database_json(bytes_data, uid, overwrite)
-            elif choice == DatabaseSchemaOptions.SQL:
-                file_upload.upload_database_CREATE_sql(bytes_data, file_name, uid, overwrite)
-
     def dialogue_page(self, id:str = "TESTID", uid:str = "TESTUSER"):
+
         with st.sidebar:
             input_mode = st.selectbox(
                 "Select Options",
@@ -154,10 +141,6 @@ class ChatBot:
                 "Select Models",
                 model_options
             )
-            if model_choice == ModelOptions.RESDSQL:
-                schema_type_choice = DatabaseSchemaOptions.JSONLIKE
-            else:
-                schema_type_choice = DatabaseSchemaOptions.SQL
             
 
             if database_name_list is not None:
