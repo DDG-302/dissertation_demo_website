@@ -14,6 +14,7 @@ if __name__ == "__main__":
     )
     # to make sure st.set_page_config are called at the very beginning
     from dialogue import chatBot
+    from performance import performance 
     with st.sidebar:
         st.image(
             "assets/img/logo2.png",
@@ -23,7 +24,7 @@ if __name__ == "__main__":
         st.caption(
             "version: 1.0"
         )
-        pages_options = ("AI", "Database detail")
+        pages_options = ("AI", "Database detail", "Performance")
         with st.sidebar:
             page = st.selectbox(
                 "Pages",
@@ -31,8 +32,11 @@ if __name__ == "__main__":
             )
     if page == pages_options[0]:
         chatBot.dialogue_page()
-    else:
+    elif page == pages_options[1]:
         chatBot.database_detail_page()
+    elif page == pages_options[2]:
+        performance.performance_page()
+
     
     # prompt = st.chat_input("Input your query")
     # # Initialize chat history
