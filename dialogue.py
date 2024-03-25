@@ -7,6 +7,7 @@ import json, os
 import sqlite3
 import requests
 import utils.file_upload as file_upload
+import config
 
 class MessageType(Enum):
     STR = 0
@@ -28,8 +29,11 @@ class ModelOptions:
 @st.cache_resource
 def get_sqlite_connection(db_file):
     conn = None
+    print(db_file)
+    print(os.path.exists(db_file))
     try:
-        conn = sqlite3.connect(db_file, check_same_thread=False)
+        conn = sqlite3.connect(db_file)
+        print(conn)
     except Exception as e:
         for err in e.args:
             st.warning(err)
@@ -45,31 +49,29 @@ model_options = (ModelOptions.RESDSQL, ModelOptions.GPT2)
 
 db_schema_options = (DatabaseSchemaOptions.JSONLIKE, DatabaseSchemaOptions.SQL)
 
-def get_database_list(schema_type_choice: str, uid: str):
-    database_list = []
-    if schema_type_choice == DatabaseSchemaOptions.JSONLIKE:
-        database_raw_dir = f"data/nasdsql/database_raw/{uid}"
-        if os.path.exists(database_raw_dir):
-            file_list = os.listdir(database_raw_dir)
-            database_list = [] # database name list
-            for file in file_list:
-                if os.path.isfile(os.path.join(database_raw_dir,file)):
-                    database_list.append(os.path.basename(file).split(".")[0])
-    elif schema_type_choice == DatabaseSchemaOptions.SQL:
-        database_raw_dir = f"data/sql/{uid}"
-        if os.path.exists(database_raw_dir):
-            file_list = os.listdir(database_raw_dir)
-            database_list = [] # database name list
-            for file in file_list:
-                if os.path.isfile(os.path.join(database_raw_dir,file)):
-                    split_str = os.path.basename(file).split(".")
-                    file_name = split_str[0]
-                    suffix = split_str[-1]
-                    if suffix.lower() == "json":
-                        database_list.append(file_name)
-    else:
-        database_raw_dir = None
-    return database_list, database_raw_dir
+@st.cache_data
+def get_database_list():
+    '''get database path
+
+    Args:
+        path (str): _description_
+        uid (str): _description_
+
+    Returns:
+        _type_: _description_
+    '''
+    database_name_list = []
+    database_name_2_file = {}
+    database_raw_dir = config.database_dir
+    dir_list = os.listdir(database_raw_dir)
+    database_name_list = [] # database name list
+    for dir in dir_list:
+        db_name = os.path.basename(dir).split(".")[0]
+        database_name_list.append(db_name)
+        database_name_2_file[db_name] = os.path.join(os.path.join(database_raw_dir,dir), f"{dir}.sqlite")
+    return database_name_list, database_name_2_file, database_raw_dir
+
+database_name_list, database_name_2_file, database_raw_dir = get_database_list()
 
 class ChatBot:
     def __init__(self) -> None:
@@ -158,11 +160,10 @@ class ChatBot:
                 schema_type_choice = DatabaseSchemaOptions.SQL
             
 
-            database_list, _ = get_database_list(schema_type_choice, uid)
-            if database_list is not None:
+            if database_name_list is not None:
                 db_choice = st.selectbox(
                     "Choose Database",
-                    database_list,
+                    database_name_list,
                     index=None,
                     help="You can upload your database in `Database Detail` page, and database schema with .json and .sql are stored seperated."
                 )
@@ -243,17 +244,26 @@ class ChatBot:
                 st.markdown(response)
                 if do_sql_query_flag:
                     try:
-                        conn = get_sqlite_connection(f"D:/work/polyu/sem2/dissertation/text2sql/m2/RESDSQL-main/database/{db_choice}/{db_choice}.sqlite")
+                        conn = get_sqlite_connection(database_name_2_file[db_choice])
+                        cursor = None
                         if conn is None:
                             get_sqlite_connection.clear()
-                        df = pd.read_sql_query(response, conn)
-                        self.output_response((df, MessageType.TABLE), id, uid)
-                        with st.container(height=400, border=False):
-                            st.table(df)
+                        else:
+                            cursor = conn.cursor()
+                            df = pd.read_sql_query(response, cursor)
+                            self.output_response((df, MessageType.TABLE), id, uid)
+                            with st.container(height=400, border=False):
+                                st.table(df)
                     except Exception as e:
                         self.output_response((e.args, MessageType.ERROR), id, uid)
                         for err in e.args:
                             st.warning(err)
+                    finally:
+                        pass
+                        # if conn is not None:
+                            # conn.commit()
+                            # conn.close()
+                            
         elif prompt is not None and db_choice is None:
             self.create_new_history(id, uid)
             self.input_message(prompt, id, uid)
@@ -264,64 +274,18 @@ class ChatBot:
                 st.warning("You must choose the database first")
 
     def database_detail_page(self, uid: str="TESTUSER"):
-        
-        with st.sidebar:
-            schema_type_choice = st.selectbox(
-                "Select Models",
-                db_schema_options
-            )
-            
-        if schema_type_choice == DatabaseSchemaOptions.JSONLIKE:
-            with st.sidebar:
-                upload_json_file = st.file_uploader("Upload Database Structure `json` File", "json", help="The json file should in the format like: https://github.com/taoyds/spider/blob/master/evaluation_examples/examples/tables.json")
-                overwrite = st.toggle("Force Overwrite", help="This will overwrite existing files.")
-                save_file_btn = st.button("Save File", key="save_file_btn")
 
-            if save_file_btn:
-                if upload_json_file is None:
-                    st.warning("You must choose a file first. Pay attention the file must be `.json`.")
-                else:
-                    self.upload_database_structure(upload_json_file.getvalue(), uid, schema_type_choice, overwrite)
-        elif schema_type_choice == DatabaseSchemaOptions.SQL:
-            with st.sidebar:
-                upload_json_file = st.file_uploader("Upload `.sql` File with CREATE statements", "sql", help="The sql statements should be valid. Non-CREATE statements will not be parsed.")
-                overwrite = st.toggle("Force Overwrite", help="This will overwrite existing files.")
-                save_file_btn = st.button("Save File", key="save_file_btn")
-            if save_file_btn:
-                if upload_json_file is None:
-                    st.warning("You must choose a file first. Pay attention the file must be `.sql`.")
-                else:
-                    self.upload_database_structure(upload_json_file.getvalue(), uid, schema_type_choice, upload_json_file.name.split(".")[0], overwrite)
-        overwrite = False
-      
-        # 1. load data json
-        database_list, database_raw_dir = get_database_list(schema_type_choice, uid)
 
         with st.sidebar:
             # user choice database by name
             db_choice = st.selectbox(
                 "Choose Database",
-                database_list,
+                database_name_list,
                 index=None
             )
             
-            if db_choice is not None:
-                def delete_database(path_list: list):
-                    for p in path_list:
-                        if os.path.exists(p) and os.path.isfile(p):
-                            os.remove(p)
-                            st.toast(f"remove {os.path.basename(p)} successfully")
-                        else:
-                            st.toast(f"fail to remove {os.path.basename(p)}", icon=":exclamation:")
-                if schema_type_choice == DatabaseSchemaOptions.JSONLIKE:
-                    args = [os.path.join(database_raw_dir, f"{db_choice}.json"),
-                            f"data/nasdsql/database_preprocess/{uid}/{db_choice}.json"]
-                elif schema_type_choice == DatabaseSchemaOptions.SQL:
-                    args = [os.path.join(database_raw_dir, f"{db_choice}.json"),
-                            os.path.join(database_raw_dir, f"{db_choice}.sql")]
-                del_db_btn = st.button("Delete Database", on_click=delete_database, args=(args,), type="primary")
                 
-        # 2. read data.json contents
+        # read data.json contents
         if db_choice is not None:
             with open(os.path.join(database_raw_dir, f"{db_choice}.json"), "r") as f:
                 detail = json.loads(f.read())

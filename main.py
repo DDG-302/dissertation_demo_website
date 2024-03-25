@@ -1,9 +1,5 @@
 import streamlit as st
-import random
-import pandas as pd
-import numpy as np
-import requests
-from dialogue import chatBot
+
 
 
 if __name__ == "__main__":
@@ -13,10 +9,11 @@ if __name__ == "__main__":
         "Text2SQL - TEST",
         initial_sidebar_state="expanded",
         menu_items={
-
+        'Get Help': 'https://www.extremelycoolapp.com/help',
         }
     )
-
+    # to make sure st.set_page_config are called at the very beginning
+    from dialogue import chatBot
     with st.sidebar:
         st.image(
             "assets/img/logo2.png",
@@ -32,7 +29,6 @@ if __name__ == "__main__":
                 "Pages",
                 pages_options
             )
-    
     if page == pages_options[0]:
         chatBot.dialogue_page()
     else:
