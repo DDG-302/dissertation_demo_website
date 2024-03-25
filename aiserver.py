@@ -30,13 +30,19 @@ class PreprocessRequest(BaseModel):
 
 @app.post("/post_query")
 async def post_query(query: QueryRequest):
-    response = ai.ddeval.get_sql(query.prompt, query.preprocessed_data, query.original_data)
-    return {"response":response}
+    try:
+        response = ai.ddeval.get_sql(query.prompt, query.preprocessed_data, query.original_data)
+    except Exception as e:
+        return {"response":e.args, "is_success": False}
+    return {"response":response, "is_success": True}
 
 @app.post("/gpt2")
 async def gpt2(query: GPT2Request):
-    response = ai.gpt2.using_gpt2.get_response(query.sql, query.question, query.external_knowledge)
-    return {"response": response}
+    try:
+        response = ai.gpt2.using_gpt2.get_response(query.sql, query.question, query.external_knowledge)
+    except Exception as e:
+        return {"response": e.args, "is_success": False}
+    return {"response": response, "is_success": True}
 
 @app.post("/preprocess_data")
 async def preprocess_data(query: PreprocessRequest):
