@@ -280,52 +280,21 @@ class ChatBot:
                 database_name_list,
                 index=None
             )
+
+            is_pk_only = st.toggle("PK Only")
             
                 
         # read data.json contents
         if db_choice is not None:
-            with open(os.path.join(database_raw_dir, f"{db_choice}.json"), "r") as f:
-                detail = json.loads(f.read())
+            if not is_pk_only:
+                svg_path = os.path.join(os.path.join(database_raw_dir, db_choice), f"{db_choice}.svg")
+            else:
+                svg_path = os.path.join(os.path.join(database_raw_dir, db_choice), f"{db_choice}_pk.svg")
+            if os.path.exists(svg_path):
+                st.image(svg_path, db_choice)
+            else:
+                st.write("sorry, the schema diagram is not ready yet...")
 
-            # 3. load required data
-            foreign_key_refrences = {}
-            foreign_key_refrenced_by = {}
-            for fk in detail["foreign_keys"]:
-                if(fk[0] not in foreign_key_refrences):
-                    foreign_key_refrences[fk[0]] = [fk[1]]
-                else:
-                    foreign_key_refrences[fk[0]].append(fk[1])
-                if(fk[1] not in foreign_key_refrenced_by):
-                    foreign_key_refrenced_by[fk[1]] = [fk[0]]
-                else:
-                    foreign_key_refrenced_by[fk[1]].append(fk[0])
-
-
-            st.header(detail["db_id"])
-            for idx, table_name in enumerate(detail["table_names_original"]):
-                st.subheader(table_name)
-                table_details = {
-                    "Column": [],
-                    "Primary Key": [],
-                    "Foreign Key": [],
-                    "Type": []
-                }
-                for col_idx, col in enumerate(detail["column_names_original"]):
-                    if(col[0] == idx):
-                        if(col_idx in foreign_key_refrences):
-                            fk_table_idx, fk_col_name = detail["column_names_original"][foreign_key_refrences[col_idx][0]]
-                            table_details["Foreign Key"].append(f'{detail["table_names_original"][fk_table_idx]} => {fk_col_name}')
-                        else:
-                            table_details["Foreign Key"].append("")
-                        if(col_idx in detail["primary_keys"]):
-                            table_details["Primary Key"].append("yes")
-                        else:
-                            table_details["Primary Key"].append("")
-                        table_details["Column"].append(col[1])
-                        table_details["Type"].append(detail["column_types"][col_idx])
-                    elif col[0] > idx:
-                        break
-                df = pd.DataFrame(table_details)
-                st.table(df)
+            
 
 chatBot = ChatBot()
