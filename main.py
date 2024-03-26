@@ -1,4 +1,5 @@
 import streamlit as st
+import mylogger
 
 
 
@@ -31,7 +32,14 @@ if __name__ == "__main__":
                 pages_options
             )
     if page == pages_options[0]:
-        chatBot.dialogue_page()
+        (performance_log, is_valid), exec_time = chatBot.dialogue_page()
+        performance_log.streamlit_running_time = exec_time
+        if performance_log.ai_running_time == -1 or performance_log.db_running_time == -1 or not is_valid:
+            pass
+        else:
+            mylogger.logger.info(str(performance_log))
+            # import datetime
+            # mylogger.logger.info("test info" + datetime.datetime.now().strftime("%H:%M:%S"))
     elif page == pages_options[1]:
         chatBot.database_detail_page()
     elif page == pages_options[2]:
