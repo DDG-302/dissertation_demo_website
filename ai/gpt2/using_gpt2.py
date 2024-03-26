@@ -17,7 +17,7 @@ from transformers import GPT2Tokenizer, GPT2Model, GPTJForCausalLM, AutoConfig, 
 # model = AutoModelForCausalLM.from_config(config)
 
 pipe = pipeline(model="gpt2",  return_full_text=False, max_new_tokens=200)
-def get_response(sql:str, question:str, external_knowledge: str=""):
+async def get_response(sql:str, question:str, external_knowledge: str=""):
     if external_knowledge is None or external_knowledge == "":
         external_knowledge = "False"
     text = f"\n-- SCHEMA:\n{sql}\n-- External Knowledge: {external_knowledge}\n-- Using valid SQLite and understanding External Knowledge, answer the following questions for the tables provided above.\n-- QUESTION: {question}\nGenerate the SQL after thinking step by step:\nSELECT"
