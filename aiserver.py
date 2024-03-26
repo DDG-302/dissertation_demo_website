@@ -11,6 +11,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+import time
 
 app = FastAPI()
 
@@ -31,18 +32,24 @@ class PreprocessRequest(BaseModel):
 @app.post("/post_query")
 async def post_query(query: QueryRequest):
     try:
-        response = ai.ddeval.get_sql(query.prompt, query.preprocessed_data, query.original_data)
+        start = time.time()
+        response = await ai.ddeval.get_sql(query.prompt, query.preprocessed_data, query.original_data)
+        end = time.time()
     except Exception as e:
-        return {"response":e.args, "is_success": False}
-    return {"response":response, "is_success": True}
+        return {"response": e.args, "running_time": -1, "is_success": False}
+    return {"response": response, "running_time": end-start, "is_success": True}
 
 @app.post("/gpt2")
 async def gpt2(query: GPT2Request):
     try:
-        response = ai.gpt2.using_gpt2.get_response(query.sql, query.question, query.external_knowledge)
+        start = time.time()
+        response = await ai.gpt2.using_gpt2.get_response(query.sql, query.question, query.external_knowledge)
+        end = time.time()
+    except IndexError as e:
+        return {"response": ("IndexError, too many tokens.",), "running_time": -1, "is_success": False}
     except Exception as e:
-        return {"response": e.args, "is_success": False}
-    return {"response": response, "is_success": True}
+        return {"response": e.args, "running_time": -1, "is_success": False}
+    return {"response": response, "running_time": end-start, "is_success": True}
 
 @app.post("/preprocess_data")
 async def preprocess_data(query: PreprocessRequest):
