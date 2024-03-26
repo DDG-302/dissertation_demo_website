@@ -18,7 +18,7 @@ def get_db_schemas(db):
     # record primary keys
     for pk_column_idx in db["primary_keys"]:
         if isinstance(pk_column_idx, list):
-            # resdsql can't handle complex PK
+            # resdsql can't handle composite PK
             continue
         # print("============================")
         # print(table_names_original)
