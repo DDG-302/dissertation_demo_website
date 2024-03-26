@@ -125,19 +125,31 @@ def prepare_batch_inputs_and_labels(batch, tokenizer):
         batch_aligned_column_labels, batch_aligned_table_labels, \
         batch_aligned_question_ids, batch_aligned_column_info_ids, \
         batch_aligned_table_name_ids, batch_column_number_in_each_table
+tokenizer_class = RobertaTokenizerFast
+    
+# load tokenizer
+tokenizer = tokenizer_class.from_pretrained(
+    text2natsql_schema_item_classifier,
+    add_prefix_space = True
+)
+
+# initialize model
+model = MyClassifier(
+    model_name_or_path = text2natsql_schema_item_classifier,
+    vocab_size = len(tokenizer),
+    mode = "test"
+)
+
+# load fine-tuned params
+model.load_state_dict(torch.load(text2natsql_schema_item_classifier + "/dense_classifier.pt", map_location=torch.device('cpu')))
+if torch.cuda.is_available():
+    model = model.cuda()
 
 def test(question: str, preprocessed_data:json, original_data:json):
 
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-    tokenizer_class = RobertaTokenizerFast
     
-    # load tokenizer
-    tokenizer = tokenizer_class.from_pretrained(
-        text2natsql_schema_item_classifier,
-        add_prefix_space = True
-    )
-
     # hard code
     table_names_in_one_db = preprocessed_data["table_names"]
     print(table_names_in_one_db)
@@ -162,17 +174,7 @@ def test(question: str, preprocessed_data:json, original_data:json):
     data = [(question, table_names_in_one_db, table_labels_in_one_db, column_infos_in_one_db, column_labels_in_one_db)]
     
 
-    # initialize model
-    model = MyClassifier(
-        model_name_or_path = text2natsql_schema_item_classifier,
-        vocab_size = len(tokenizer),
-        mode = "test"
-    )
-
-    # load fine-tuned params
-    model.load_state_dict(torch.load(text2natsql_schema_item_classifier + "/dense_classifier.pt", map_location=torch.device('cpu')))
-    if torch.cuda.is_available():
-        model = model.cuda()
+    
     model.eval()
 
     table_labels_for_auc, column_labels_for_auc = [], []

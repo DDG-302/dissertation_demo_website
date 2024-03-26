@@ -17,6 +17,14 @@ def get_db_schemas(db):
     primary_keys, foreign_keys = [], []
     # record primary keys
     for pk_column_idx in db["primary_keys"]:
+        if isinstance(pk_column_idx, list):
+            # resdsql can't handle complex PK
+            continue
+        # print("============================")
+        # print(table_names_original)
+        # print(column_names_original)
+        # print(pk_column_idx)
+        # print("============================")
         pk_table_name_original = table_names_original[column_names_original[pk_column_idx][0]]
         pk_column_name_original = column_names_original[pk_column_idx][1]
         
@@ -141,140 +149,140 @@ def generate_eval_ranked_dataset(question: str, input_table_pred_probs: list, in
     ranked_data["db_schema"] = []
     ranked_data["natsql_skeleton"] = ""
     ranked_data["norm_natsql"] = ""
-    db_schema =  [
-      {
-        "table_name_original": "stadium",
-        "table_name": "stadium",
-        "column_names": [
-          "stadium id",
-          "location",
-          "name",
-          "capacity",
-          "highest",
-          "lowest",
-          "average"
-        ],
-        "column_names_original": [
-          "stadium_id",
-          "location",
-          "name",
-          "capacity",
-          "highest",
-          "lowest",
-          "average"
-        ],
-        "column_types": [
-          "number",
-          "text",
-          "text",
-          "number",
-          "number",
-          "number",
-          "number"
-        ],
-        "db_contents": [
-          [],
-          [],
-          [],
-          [],
-          [],
-          [],
-          []
-        ]
-      },
-      {
-        "table_name_original": "singer",
-        "table_name": "singer",
-        "column_names": [
-          "singer id",
-          "name",
-          "country",
-          "song name",
-          "song release year",
-          "age",
-          "is male"
-        ],
-        "column_names_original": [
-          "singer_id",
-          "name",
-          "country",
-          "song_name",
-          "song_release_year",
-          "age",
-          "is_male"
-        ],
-        "column_types": [
-          "number",
-          "text",
-          "text",
-          "text",
-          "text",
-          "number",
-          "others"
-        ],
-        "db_contents": [
-          [],
-          [],
-          [],
-          [],
-          [],
-          [],
-          []
-        ]
-      },
-      {
-        "table_name_original": "concert",
-        "table_name": "concert",
-        "column_names": [
-          "concert id",
-          "concert name",
-          "theme",
-          "stadium id",
-          "year"
-        ],
-        "column_names_original": [
-          "concert_id",
-          "concert_name",
-          "theme",
-          "stadium_id",
-          "year"
-        ],
-        "column_types": [
-          "number",
-          "text",
-          "text",
-          "text",
-          "text"
-        ],
-        "db_contents": [
-          [],
-          [],
-          [],
-          [],
-          []
-        ]
-      },
-      {
-        "table_name_original": "singer_in_concert",
-        "table_name": "singer in concert",
-        "column_names": [
-          "concert id",
-          "singer id"
-        ],
-        "column_names_original": [
-          "concert_id",
-          "singer_id"
-        ],
-        "column_types": [
-          "number",
-          "text"
-        ],
-        "db_contents": [
-          [],
-          []
-        ]
-      }
-    ]
+    # db_schema =  [
+    #   {
+    #     "table_name_original": "stadium",
+    #     "table_name": "stadium",
+    #     "column_names": [
+    #       "stadium id",
+    #       "location",
+    #       "name",
+    #       "capacity",
+    #       "highest",
+    #       "lowest",
+    #       "average"
+    #     ],
+    #     "column_names_original": [
+    #       "stadium_id",
+    #       "location",
+    #       "name",
+    #       "capacity",
+    #       "highest",
+    #       "lowest",
+    #       "average"
+    #     ],
+    #     "column_types": [
+    #       "number",
+    #       "text",
+    #       "text",
+    #       "number",
+    #       "number",
+    #       "number",
+    #       "number"
+    #     ],
+    #     "db_contents": [
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       []
+    #     ]
+    #   },
+    #   {
+    #     "table_name_original": "singer",
+    #     "table_name": "singer",
+    #     "column_names": [
+    #       "singer id",
+    #       "name",
+    #       "country",
+    #       "song name",
+    #       "song release year",
+    #       "age",
+    #       "is male"
+    #     ],
+    #     "column_names_original": [
+    #       "singer_id",
+    #       "name",
+    #       "country",
+    #       "song_name",
+    #       "song_release_year",
+    #       "age",
+    #       "is_male"
+    #     ],
+    #     "column_types": [
+    #       "number",
+    #       "text",
+    #       "text",
+    #       "text",
+    #       "text",
+    #       "number",
+    #       "others"
+    #     ],
+    #     "db_contents": [
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       []
+    #     ]
+    #   },
+    #   {
+    #     "table_name_original": "concert",
+    #     "table_name": "concert",
+    #     "column_names": [
+    #       "concert id",
+    #       "concert name",
+    #       "theme",
+    #       "stadium id",
+    #       "year"
+    #     ],
+    #     "column_names_original": [
+    #       "concert_id",
+    #       "concert_name",
+    #       "theme",
+    #       "stadium_id",
+    #       "year"
+    #     ],
+    #     "column_types": [
+    #       "number",
+    #       "text",
+    #       "text",
+    #       "text",
+    #       "text"
+    #     ],
+    #     "db_contents": [
+    #       [],
+    #       [],
+    #       [],
+    #       [],
+    #       []
+    #     ]
+    #   },
+    #   {
+    #     "table_name_original": "singer_in_concert",
+    #     "table_name": "singer in concert",
+    #     "column_names": [
+    #       "concert id",
+    #       "singer id"
+    #     ],
+    #     "column_names_original": [
+    #       "concert_id",
+    #       "singer_id"
+    #     ],
+    #     "column_types": [
+    #       "number",
+    #       "text"
+    #     ],
+    #     "db_contents": [
+    #       [],
+    #       []
+    #     ]
+    #   }
+    # ]
     
     db_schema = preprocessed_data
     # fk_list = [
@@ -301,7 +309,7 @@ def generate_eval_ranked_dataset(question: str, input_table_pred_probs: list, in
     table_pred_probs = list(map(lambda x:round(x,4), input_table_pred_probs))
     # find ids of tables that have top-k probability
     topk_table_ids = np.argsort(-np.array(table_pred_probs), kind="stable")[:topk_column_num].tolist()    
-    print(db_schema)
+    # print(db_schema)
     # record top-k1 tables and top-k2 columns for each table
     for table_id in topk_table_ids:
         new_table_info = dict()

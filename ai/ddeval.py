@@ -4,7 +4,7 @@ text2natsql_model_bs=1
 model_name = "resdsql_base_natsql"
 
 
-db_path=r"D:\work\polyu\sem2\dissertation\text2sql\m2\RESDSQL-main\database"
+db_path=r"D:/work/polyu/sem2/dissertation/demo/bird/dev/dev_databases/dev_databases"
 
 
 
@@ -20,6 +20,25 @@ from tokenizers import AddedToken
 from transformers import T5TokenizerFast, T5ForConditionalGeneration
 from ai.utils.text2sql_decoding_utils import decode_natsqls
     
+# initialize tokenizer
+tokenizer = T5TokenizerFast.from_pretrained(
+    text2natsql_model_save_path,
+    add_prefix_space = True
+)
+
+if isinstance(tokenizer, T5TokenizerFast):
+    tokenizer.add_tokens([AddedToken(" <="), AddedToken(" <")])
+
+
+model_class = T5ForConditionalGeneration
+
+# initialize model
+model = model_class.from_pretrained(text2natsql_model_save_path)
+if torch.cuda.is_available():
+    model = model.cuda()
+
+model.eval()
+
 def _test(batch, preprocessed_data):    
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     
@@ -29,24 +48,7 @@ def _test(batch, preprocessed_data):
     for t in tables:
         table_dict[t["db_id"]] = t
 
-    # initialize tokenizer
-    tokenizer = T5TokenizerFast.from_pretrained(
-        text2natsql_model_save_path,
-        add_prefix_space = True
-    )
     
-    if isinstance(tokenizer, T5TokenizerFast):
-        tokenizer.add_tokens([AddedToken(" <="), AddedToken(" <")])
-    
-
-    model_class = T5ForConditionalGeneration
-
-    # initialize model
-    model = model_class.from_pretrained(text2natsql_model_save_path)
-    if torch.cuda.is_available():
-        model = model.cuda()
-
-    model.eval()
     predict_sqls = []
 
     batch_inputs = [data[0] for data in batch]
@@ -91,7 +93,7 @@ def _test(batch, preprocessed_data):
     
     return predict_sql[0]
  
-def get_sql(question: str, preprocessed_data: dict, original_data: dict):
+async def get_sql(question: str, preprocessed_data: dict, original_data: dict):
     import ai.dd_text2natsql
 
     # get schema linking
