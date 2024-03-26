@@ -9,32 +9,20 @@ import requests
 # import utils.file_upload as file_upload
 import config
 import mylogger
+import utils.ai_call as ai_call
+from options import *
 
 class MessageType(Enum):
     STR = 0
     TABLE = 1
     ERROR = 2
+    CAPTION = 3
 
-class InputOptions:
-    NATURAL_LANGUAGE = "Natural Language"
-    SQL = "SQL"
-
-class DatabaseSchemaOptions:
-    JSONLIKE = "json like"
-    SQL = "CREATE statement"
-
-class ModelOptions:
-    RESDSQL = "RESDSQL"
-    GPT2 = "GPT-2"
-
-@st.cache_resource
+# @st.cache_resource
 def get_sqlite_connection(db_file):
     conn = None
-    print(db_file)
-    print(os.path.exists(db_file))
     try:
         conn = sqlite3.connect(db_file)
-        print(conn)
     except Exception as e:
         for err in e.args:
             st.warning(err)
@@ -76,6 +64,7 @@ database_name_list, database_name_2_file, database_raw_dir = get_database_list()
 
 class ChatBot:
     def __init__(self) -> None:
+        print("chat bot init")
         pass
 
     def init_history_for_user(self, uid: str):
@@ -88,7 +77,7 @@ class ChatBot:
         # each element:
         # {
         #     "prompt": "",
-        #     "response": []
+        #     "response": [] # [(message or data, MessageType), (message or data, MessageType), ...]
         # }
     
     def create_new_history(self, id: str, uid: str):
@@ -128,7 +117,10 @@ class ChatBot:
             self.init_history_for_id(id)
         st.session_state[uid][id][-1]["response"].append(response)
 
+    @mylogger.streamlit_performance_log
     def dialogue_page(self, id:str = "TESTID", uid:str = "TESTUSER"):
+        # define external knowledge to pretend undefined error
+        external_knowledge = None
 
         with st.sidebar:
             input_mode = st.selectbox(
@@ -161,24 +153,34 @@ class ChatBot:
             prompt = st.chat_input("Input your query")
         else:
             prompt = st.chat_input("Input your SQL")
-
-        # Display chat messages from history on app rerun
-
+        ###################################################
+        # Display chat messages from history on app rerun #
+        ###################################################
         for item in st.session_state[uid][id]:
             with st.chat_message("user"):
                 st.markdown(item["prompt"])
             with st.chat_message("assistant"):
                 for data, data_type in item["response"]:
-                    if(data_type == MessageType.STR):
-                        st.markdown(data)
+                    if(data_type == MessageType.CAPTION):
+                        caption_markdown = ""
+                        for caption in data:
+                            caption_markdown += f"`{caption}` "
+                        st.markdown(caption_markdown)
+                    elif(data_type == MessageType.STR):
+                        st.text(data)
                     elif(data_type == MessageType.TABLE):
                         with st.container(height=400, border=False):
                             st.table(data)
                     elif(data_type == MessageType.ERROR):
                         for err in data:
                             st.warning(err)
-            # React to user input
-        
+        #######################                 
+        # React to user input #
+        #######################
+        is_success = True
+        ai_running_time = 0
+        db_running_time = 0
+        current_caption = ""
         if prompt and db_choice is not None:
             self.create_new_history(id, uid)
             # Display user message in chat message container
@@ -189,64 +191,74 @@ class ChatBot:
             self.input_message(prompt, id, uid)
             do_sql_query_flag = False
             if(input_mode == InputOptions.NATURAL_LANGUAGE):
-                if model_choice == ModelOptions.RESDSQL:
-                    if os.path.exists(f"data/nasdsql/database_preprocess/{uid}/{db_choice}.json") and os.path.exists(f"data/nasdsql/database_raw/{uid}/{db_choice}.json"):
-                        with open(f"data/nasdsql/database_preprocess/{uid}/{db_choice}.json", "r") as f:
-                            content = f.read()
-                            preprocessed_database_info = json.loads(content)
-                        with open(f"data/nasdsql/database_raw/{uid}/{db_choice}.json", "r") as f:
-                            content = f.read()
-                            original = json.loads(content)
-                        response = requests.post("http://127.0.0.1:5000/post_query",  json={"prompt": prompt, "preprocessed_data": preprocessed_database_info, "original_data": original}).json()["response"]
-                        do_sql_query_flag = True
-                    else:
-                        response = "File Not Exists!"
-                elif model_choice == ModelOptions.GPT2:
-                    if os.path.exists(f"data/sql/{uid}/{db_choice}.sql"):
-                        with open(f"data/sql/{uid}/{db_choice}.sql", "r") as f:
-                            create_statements = f.read()
+                current_caption = (input_mode, model_choice)
+                response, is_success, ai_running_time = ai_call.ai_call(model_choice, prompt, db_choice, external_knowledge)
+                if is_success:
+                    do_sql_query_flag = True
 
-                        response = requests.post("http://127.0.0.1:5000/gpt2",  json={"question": prompt, "sql": create_statements, "external_knowledge": external_knowledge}).json()["response"]
-                        # do_sql_query_flag = True
-                    else:
-                        response = "File Not Exists!"
-                else:
-                    response = "Model Not Found!"
+                ################################
+                # this should be removed later #
+                if model_choice == ModelOptions.GPT2:
+                    do_sql_query_flag = False
+                # this should be removed later #
+                ################################
+
             else:
+                current_caption = (input_mode, )
                 response = prompt
                 do_sql_query_flag = True
-            self.output_response((response, MessageType.STR), id, uid)
-
-            # Database connection
 
             
 
-            # Display assistant response in chat message container
-
+            
+            ########################################################
+            # Display assistant response in chat message container #
+            ########################################################
             with st.chat_message("assistant"):
-                st.markdown(response)
+                if is_success:
+                    self.output_response((current_caption, MessageType.CAPTION), id, uid)
+                    caption_markdown = ""
+                    for caption in current_caption:
+                        caption_markdown += f"`{caption}` "
+                    st.markdown(caption_markdown)
+                    self.output_response((response, MessageType.STR),id, uid)
+                    st.text(response)
+                else:
+                    self.output_response((response, MessageType.ERROR),id, uid)
+                    for err in response:
+                        st.warning(err)
                 if do_sql_query_flag:
-                    try:
-                        conn = get_sqlite_connection(database_name_2_file[db_choice])
-                        cursor = None
-                        if conn is None:
-                            get_sqlite_connection.clear()
-                        else:
-                            cursor = conn.cursor()
-                            df = pd.read_sql_query(response, cursor)
-                            self.output_response((df, MessageType.TABLE), id, uid)
-                            with st.container(height=400, border=False):
-                                st.table(df)
-                    except Exception as e:
-                        self.output_response((e.args, MessageType.ERROR), id, uid)
-                        for err in e.args:
-                            st.warning(err)
-                    finally:
-                        pass
-                        # if conn is not None:
-                            # conn.commit()
-                            # conn.close()
-                            
+                    def execute_sql():
+                        db_running_time = -1
+                        try:
+                            import time
+                            # Database connection
+                            start = time.time()
+                            conn = get_sqlite_connection(database_name_2_file[db_choice])
+                            if conn is None:
+                                get_sqlite_connection.clear()
+                            else:
+                                df = pd.read_sql_query(response, conn)
+                                if len(df) > config.dataframe_max_rows:
+                                    too_many_rows_msg = f"***Too many rows({len(df)}) to display, reduced to {config.dataframe_max_rows} rows.***"
+                                    st.markdown(too_many_rows_msg)
+                                    self.output_response((too_many_rows_msg, MessageType.STR), id, uid)
+                                    df = df.head(config.dataframe_max_rows)
+                                end = time.time()
+                                db_running_time = end - start
+                                self.output_response((df, MessageType.TABLE), id, uid)
+                                with st.container(height=400, border=False):
+                                    st.table(df)
+                        except Exception as e:
+                            self.output_response((e.args, MessageType.ERROR), id, uid)
+                            for err in e.args:
+                                st.warning(err)
+                        finally:
+                            if conn is not None:
+                                conn.commit()
+                                conn.close()
+                            return db_running_time
+                    db_running_time = execute_sql()        
         elif prompt is not None and db_choice is None:
             self.create_new_history(id, uid)
             self.input_message(prompt, id, uid)
@@ -255,6 +267,8 @@ class ChatBot:
             self.output_response((["You must choose the database first"], MessageType.ERROR), id, uid)
             with st.chat_message("assistant"):
                 st.warning("You must choose the database first")
+        from datetime import datetime
+        return mylogger.PerformanceLog(0, model_choice, ai_running_time, db_running_time, exec_datetime=datetime.now()), prompt and db_choice is not None
 
     def database_detail_page(self, uid: str="TESTUSER"):
 
